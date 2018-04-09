@@ -4,18 +4,19 @@ import { NgModule, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 import 'stencil-components/dist/stencil-components';
 
 import { AppComponent } from './app.component';
-import { InoInputWrapperComponent } from './ino-input-wrapper/ino-input-wrapper.component';
+import { SharedModule } from './shared/shared.module';
 
 
 @NgModule({
   declarations: [
-    AppComponent,
-    InoInputWrapperComponent
+    AppComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    SharedModule
   ],
-  providers: [],
+  providers: [
+  ],
   bootstrap: [AppComponent],
   schemas: [CUSTOM_ELEMENTS_SCHEMA],
 })

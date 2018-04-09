@@ -1,3 +1,12 @@
-<!--The content below is only a placeholder and can be replaced.-->
-<ino-input type="text"></ino-input>
-<ino-icon icon="user"></ino-icon>
+<h2>Simple TODO</h2>
+
+<div class="app-wrapper">
+  <div class="action-box">
+    <ino-input type="text" [value]="newTodoName" (change)="onValueChanged($event)" placeholder="What needs to be done..."></ino-input>
+    <ino-button (inoClick)="add()">Add</ino-button>
+  </div>
+
+  <ul class="todos">
+    <li *ngFor="let todo of todos; index as i">{{ todo.name }} <ino-button (inoClick)="delete(i, todo)">Delete</ino-button></li>
+  </ul>
+</div>

@@ -3,10 +3,10 @@
 <div class="app-wrapper">
   <div class="action-box">
     <ino-input type="text" [value]="newTodoName" (change)="onValueChanged($event)" placeholder="What needs to be done..."></ino-input>
-    <ino-button (inoClick)="add()">Add</ino-button>
+    <ino-button (click)="add()" icon-right="question">Add</ino-button>
   </div>
 
   <ul class="todos">
-    <li *ngFor="let todo of todos; index as i">{{ todo.name }} <ino-button (inoClick)="delete(i, todo)">Delete</ino-button></li>
+    <li *ngFor="let todo of todos; index as i">{{ todo.name }} <ino-button (click)="delete(i, todo)">Delete</ino-button></li>
   </ul>
 </div>

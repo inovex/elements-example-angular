@@ -16,8 +16,8 @@ export class AppComponent {
     this.todos = this.todoService.getRandomTodos();
   }
 
-  onValueChanged($event: CustomEvent) {
-    this.newTodoName = $event.detail;
+  onValueChanged($event: any) {
+    this.newTodoName = $event.target.value;
   }
 
   add() {

@@ -1,12 +1,18 @@
-# Stencil in Angular
+# Inovex elements in Angular
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.7.3.
 
-## Integration of stencil components
-This project demonstrates the usage of [stencil-components](https://gitlab.inovex.de/inovex-elements/stencil-components) in Angular. Since the components are currently not published to npm, please use the npm linking function to integrate them.
+## Getting started
 
-Make sure that you already executed `npm link` in the directory of [stencil-components](https://gitlab.inovex.de/inovex-elements/stencil-components). Afterwards, run in this project and `npm link stencil-components` to link the components to this project.
+This project demonstrates the usage of [inovex elements](https://gitlab.inovex.de/inovex-elements/core) in Angular.
 
+To set up your development environment, run the following script (username inovex, password inovex)
 
+```
+npm set registry https://registry.elements.inovex.io
+npm adduser --registry https://registry.elements.inovex.io
+npm config set always-auth true
+npm install
+```
 
 ## Development server
 

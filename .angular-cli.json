@@ -10,7 +10,7 @@
       "assets": [
         "assets",
         "favicon.ico",
-        { "glob": "**/*", "input": "../node_modules/stencil-components/dist/stencil-components", "output": "./stencil-components" }
+        { "glob": "**/*", "input": "../node_modules/@inovex/elements/dist/inovex-elements", "output": "./inovex-elements" }
       ],
       "index": "index.html",
       "main": "main.ts",

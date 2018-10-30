@@ -8,8 +8,7 @@ This project demonstrates the usage of [inovex elements](https://gitlab.inovex.d
 To set up your development environment, run the following script (username inovex, password inovex)
 
 ```
-npm set registry https://registry.elements.inovex.io
-npm adduser --registry https://registry.elements.inovex.io
+npm adduser --registry https://registry.elements.inovex.io --scope=@inovex
 npm config set always-auth true
 npm install
 ```

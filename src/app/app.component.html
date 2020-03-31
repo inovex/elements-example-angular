@@ -2,7 +2,9 @@
 
 <div class="app-wrapper">
   <div class="action-box">
-    <ino-input ino-icon="add" ino-icon-clickable ino-icon-trailing (inoIconClicked)="add()" type="text" [value]="newTodoName" (keyup)="onValueChanged($event)" placeholder="What needs to be done..."></ino-input>
+    <ino-input ino-icon-clickable ino-icon-trailing (inoIconClicked)="add()" type="text" [value]="newTodoName" (keyup)="onValueChanged($event)" placeholder="What needs to be done...">
+      <ino-icon slot="ino-icon-trailing" ino-icon="add"></ino-icon>
+    </ino-input>
   </div>
 
   <ul class="todos">

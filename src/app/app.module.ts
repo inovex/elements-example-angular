@@ -1,7 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
-import { NgModule, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
+import { NgModule } from '@angular/core';
 
-import '@inovex/elements';
+import { InoElementsModule } from '@inovex/elements-angular';
 
 import { AppComponent } from './app.component';
 import { SharedModule } from './shared/shared.module';
@@ -13,11 +13,10 @@ import { SharedModule } from './shared/shared.module';
   ],
   imports: [
     BrowserModule,
-    SharedModule
+    SharedModule,
+    InoElementsModule
   ],
-  providers: [
-  ],
-  bootstrap: [AppComponent],
-  schemas: [CUSTOM_ELEMENTS_SCHEMA],
+  providers: [],
+  bootstrap: [AppComponent]
 })
 export class AppModule { }

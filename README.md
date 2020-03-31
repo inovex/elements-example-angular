@@ -1,17 +1,6 @@
-# Inovex elements in Angular
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.7.3.
+# ExampleAngular
 
-## Getting started
-
-This project demonstrates the usage of [inovex elements](https://gitlab.inovex.de/inovex-elements/core) in Angular.
-
-To set up your development environment, run the following script (username inovex, password inovex)
-
-```
-npm adduser --registry https://registry.elements.inovex.io --scope=@inovex
-npm config set always-auth true
-npm install
-```
+This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 9.1.0.
 
 ## Development server
 
@@ -23,7 +12,7 @@ Run `ng generate component component-name` to generate a new component. You can 
 
 ## Build
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `-prod` flag for a production build.
+Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
 
 ## Running unit tests
 

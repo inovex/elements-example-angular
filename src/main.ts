@@ -1,7 +1,7 @@
 import { enableProdMode } from '@angular/core';
 import { platformBrowserDynamic } from '@angular/platform-browser-dynamic';
 
-import { defineCustomElements } from '@inovex/elements/dist/loader';
+import { defineCustomElements } from '@inovex.de/elements/dist/loader';
 
 import { AppModule } from './app/app.module';
 import { environment } from './environments/environment';

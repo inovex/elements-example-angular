@@ -28,7 +28,7 @@
               "src/assets",
               {
                 "glob": "**/*",
-                "input": "node_modules/@inovex/elements/dist/inovex-elements/icon-assets",
+                "input": "node_modules/@inovex.de/elements/dist/inovex-elements/icon-assets",
                 "output": "/icon-assets"
               }
             ],
@@ -97,7 +97,7 @@
               "src/assets",
               {
                 "glob": "**/*",
-                "input": "node_modules/@inovex/elements/dist/inovex-elements/icon-assets/SVG",
+                "input": "node_modules/@inovex.de/elements/dist/inovex-elements/icon-assets/SVG",
                 "output": "/icon-assets/SVG"
               }
             ],

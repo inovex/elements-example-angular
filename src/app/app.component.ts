@@ -5,7 +5,7 @@ import { Component } from '@angular/core';
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
-  styleUrls: ['./app.component.scss']
+  styleUrls: ['./app.component.scss'],
 })
 export class AppComponent {
   todos: Array<Todo>;
@@ -26,6 +26,6 @@ export class AppComponent {
   }
 
   delete(index: number, todo: Todo) {
-    this.todos = this.todos.filter(currentTodo => currentTodo !== todo);
+    this.todos = this.todos.filter((currentTodo) => currentTodo !== todo);
   }
 }

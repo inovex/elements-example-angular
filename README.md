@@ -1,5 +1,7 @@
 # ExampleAngular
 
+![Edit inovex-elements](https://codesandbox.io/static/img/play-codesandbox.svg)](https://codesandbox.io/s/github/inovex/elements-example-angular/tree/master/?fontsize=14&hidenavigation=1&theme=dark)
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 9.1.0.
 
 ## Development server

@@ -1,7 +1,7 @@
 import { Todo } from './shared/models/todo';
 import { TodoService } from './shared/services/todo.service';
 import { Component } from '@angular/core';
-import 'core-js/es7/reflect'; // fix for codesandbox
+import 'core-js/features/reflect'; // fix for codesandbox
 
 @Component({
   selector: 'app-root',

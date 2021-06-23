@@ -25,4 +25,8 @@ export class NavigationComponent implements OnInit {
   toggleNavBar(): void {
     this.navBarExpanded = !this.navBarExpanded;
   }
+
+  onNavIconClick(): void {
+    this.router.navigate(['']);
+  }
 }

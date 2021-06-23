@@ -10,7 +10,7 @@ import {NavigationItem} from './navigation/navigation.component'; // fix for cod
 export class AppComponent {
   navItems: NavigationItem[] = [
     {
-      text: 'Showcase',
+      text: 'elements Showcase',
       url: 'showcase',
       exactMatch: true,
       icon: 'star',

@@ -1,0 +1,19 @@
+h2 {
+  padding: 0;
+  margin: 0;
+}
+
+.showcase {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: flex-start;
+  overflow: auto;
+  margin: 20px;
+}
+
+ino-card {
+  width: 250px;
+  height: 325px;
+  margin: 15px;
+}

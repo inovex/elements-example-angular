@@ -1,4 +1,12 @@
 <ino-nav-drawer inoOpen="{{navBarExpanded}}" (openChange)="toggleNavBar()">
+  <ino-list slot="header">
+    <ino-icon
+      class="header-icon"
+      inoIcon="employee"
+      (clickEl)="onNavIconClick()"
+      inoClickable
+    ></ino-icon>
+  </ino-list>
   <ino-list slot="content">
     <ino-nav-item
       *ngFor="let navItem of navItems"

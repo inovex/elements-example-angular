@@ -1,7 +1,6 @@
-import { Todo } from './shared/models/todo';
-import { TodoService } from './shared/services/todo.service';
 import { Component } from '@angular/core';
-import 'core-js/features/reflect'; // fix for codesandbox
+import 'core-js/features/reflect';
+import {NavigationItem} from './navigation/navigation.component'; // fix for codesandbox
 
 @Component({
   selector: 'app-root',
@@ -9,24 +8,17 @@ import 'core-js/features/reflect'; // fix for codesandbox
   styleUrls: ['./app.component.scss'],
 })
 export class AppComponent {
-  todos: Array<Todo>;
-
-  newTodoName: string;
-
-  constructor(private todoService: TodoService) {
-    this.todos = this.todoService.getRandomTodos();
-  }
-
-  onValueChanged($event: any) {
-    this.newTodoName = $event.target.value;
-  }
-
-  add() {
-    this.todos.push(new Todo(this.newTodoName));
-    this.newTodoName = '';
-  }
-
-  delete(index: number, todo: Todo) {
-    this.todos = this.todos.filter((currentTodo) => currentTodo !== todo);
-  }
+  navItems: NavigationItem[] = [
+    {
+      text: 'Showcase',
+      url: 'showcase',
+      exactMatch: true,
+      icon: 'star',
+    },
+    {
+      text: 'ToDo List',
+      url: 'todo-list',
+      icon: 'checkmark',
+    },
+  ];
 }

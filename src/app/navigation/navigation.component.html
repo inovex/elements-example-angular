@@ -1,0 +1,15 @@
+<ino-nav-drawer inoOpen="{{navBarExpanded}}" (openChange)="toggleNavBar()">
+  <ino-list slot="content">
+    <ino-nav-item
+      *ngFor="let navItem of navItems"
+      inoText="{{navItem.text}}"
+      [routerLink]="navItem.url"
+      [routerLinkActive]
+      #rla="routerLinkActive"
+      [inoActivated]="rla.isActive"
+    >
+      <ino-icon inoIcon="{{navItem.icon}}"></ino-icon>
+    </ino-nav-item>
+  </ino-list>
+  <ng-content></ng-content>
+</ino-nav-drawer>

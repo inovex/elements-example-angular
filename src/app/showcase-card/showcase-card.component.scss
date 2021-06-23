@@ -1,0 +1,33 @@
+@use "../../styles/colors";
+
+p {
+  font-size: 16pt;
+  color: colors.$dark;
+  font-family: "Lato";
+}
+
+ino-card {
+  width: 250px;
+  height: 325px;
+  margin: 15px;
+
+  .mdc-card .ino-card__content {
+    height: 100%;
+  }
+}
+
+.showcase-card--header {
+  height: 30px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.showcase-card--content {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}

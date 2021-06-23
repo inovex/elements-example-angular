@@ -9,9 +9,10 @@ import { AppRoutingModule } from './app-routing.module';
 import { ShowcaseComponent } from './showcase/showcase.component';
 import { NavigationComponent } from './navigation/navigation.component';
 import { TodoListComponent } from './todo-list/todo-list.component';
+import { ShowcaseCardComponent } from './showcase-card/showcase-card.component';
 
 @NgModule({
-  declarations: [AppComponent, ShowcaseComponent, NavigationComponent, TodoListComponent],
+  declarations: [AppComponent, ShowcaseComponent, NavigationComponent, TodoListComponent, ShowcaseCardComponent],
   imports: [BrowserModule, SharedModule, InoElementsModule.forRoot(), AppRoutingModule],
   providers: [],
   bootstrap: [AppComponent],

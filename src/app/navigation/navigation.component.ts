@@ -1,4 +1,4 @@
-import {Component, Input, OnInit} from '@angular/core';
+import {Component, Input, OnInit, ViewEncapsulation} from '@angular/core';
 import {Router} from '@angular/router';
 
 export interface NavigationItem {
@@ -11,7 +11,8 @@ export interface NavigationItem {
 @Component({
   selector: 'app-navigation',
   templateUrl: './navigation.component.html',
-  styleUrls: ['./navigation.component.scss']
+  styleUrls: ['./navigation.component.scss'],
+  encapsulation: ViewEncapsulation.None
 })
 export class NavigationComponent implements OnInit {
   @Input() navBarExpanded = false;

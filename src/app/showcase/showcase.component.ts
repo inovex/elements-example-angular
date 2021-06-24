@@ -1,4 +1,4 @@
-import {Component, OnInit, ViewEncapsulation} from '@angular/core';
+import {Component, HostListener, Input, OnInit, ViewEncapsulation} from '@angular/core';
 
 @Component({
   selector: 'app-showcase',
@@ -10,7 +10,21 @@ export class ShowcaseComponent implements OnInit {
 
   constructor() { }
 
-  ngOnInit(): void {
+  @Input() dialogOpen = false;
+
+  @HostListener('openChange', ['$event'])
+  public onOpenChange(event: any): void
+  {
+    event.stopPropagation();
   }
 
+  ngOnInit(): void {
+
+  }
+
+
+  toggleDialog() {
+    console.debug(`Dialog is open: ${this.dialogOpen}`);
+    this.dialogOpen = !this.dialogOpen;
+  }
 }

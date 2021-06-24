@@ -12,11 +12,7 @@ h2 {
   margin: 20px;
 }
 
-ino-header {
-  width: 100%;
-}
-
-ino-list {
+ino-header, ino-list, ino-input, ino-range, ino-select, ino-progress-bar {
   width: 100%;
 }
 
@@ -25,8 +21,4 @@ ino-input-file {
   .ino-input-file__dnd {
     height: 200px;
   }
-}
-
-ino-input {
-  width: 100%;
 }

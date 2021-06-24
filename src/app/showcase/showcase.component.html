@@ -32,11 +32,7 @@
   </app-showcase-card>
 
   <app-showcase-card cardTitle="InoCard">
-    <!-- TODO -->
-  </app-showcase-card>
 
-  <app-showcase-card cardTitle="InoDialog">
-    <!-- TODO -->
   </app-showcase-card>
 
   <app-showcase-card cardTitle="InoHeader">
@@ -55,6 +51,7 @@
 
   <app-showcase-card cardTitle="InoMenu">
     <!-- TODO -->
+    <ino-button (click)="toggleDialog()"></ino-button>
   </app-showcase-card>
 
   <app-showcase-card cardTitle="InoTabBar">
@@ -128,32 +125,56 @@
     </ino-input>
   </app-showcase-card>
 
-  <app-showcase-card cardTitle="InoRadio">
-    <!-- TODO -->
+  <app-showcase-card cardTitle="InoRadioButton">
+    <ino-radio>Unchecked</ino-radio>
+    <ino-radio checked>Checked</ino-radio>
+    <ino-radio disabled>Disabled</ino-radio>
   </app-showcase-card>
 
   <app-showcase-card cardTitle="InoRange">
-    <!-- TODO -->
+    <ino-range min="0" max="100" value="0"></ino-range>
+    <ino-range min="0" max="100" value="69" inoColorScheme="warning"></ino-range>
+    <ino-range min="0" max="100" value="45" inoColorScheme="secondary" inoDiscrete inoMarkers step="5"></ino-range>
   </app-showcase-card>
 
   <app-showcase-card cardTitle="InoSelect">
-    <!-- TODO -->
+    <ino-select value="1">
+      <ino-option value="1">Option 1</ino-option>
+      <ino-option value="2">Option 2</ino-option>
+      <ino-option value="3">Option 3</ino-option>
+    </ino-select>
+    <ino-select value="3" required>
+      <ino-option value="1">Option 1</ino-option>
+      <ino-option value="2">Option 2</ino-option>
+      <ino-option value="3">Option 3</ino-option>
+    </ino-select>
   </app-showcase-card>
 
   <app-showcase-card cardTitle="InoSwitch">
-    <!-- TODO -->
+    <ino-switch>Unchecked</ino-switch>
+    <ino-switch checked inoColorScheme="secondary">Checked</ino-switch>
+    <ino-switch disabled>Disabled</ino-switch>
   </app-showcase-card>
 
   <app-showcase-card cardTitle="InoTextarea">
-    <!-- TODO -->
+    <ino-textarea inoLabel="InoTextarea" rows="8"></ino-textarea>
   </app-showcase-card>
 
   <app-showcase-card cardTitle="InoPopover">
-    <!-- TODO -->
+    <ino-popover inoTrigger="mouseenter" inoPlacement="top">
+      <ino-button slot="ino-popover-trigger">Mouseenter</ino-button>
+      InoPopover
+    </ino-popover>
+    <ino-popover inoTrigger="click" inoColorScheme="secondary" inoPlacement="top">
+      <ino-button slot="ino-popover-trigger" inoColorScheme="secondary">Click</ino-button>
+      InoPopover
+    </ino-popover>
   </app-showcase-card>
 
   <app-showcase-card cardTitle="InoProgressBar">
-    <!-- TODO -->
+    <ino-progress-bar inoProgress="0.7"></ino-progress-bar>
+    <ino-progress-bar inoProgress="0.3" inoBuffer="0.67"></ino-progress-bar>
+    <ino-progress-bar inoProgress="0.3" inoBuffer="0.67" inoIndeterminate></ino-progress-bar>
   </app-showcase-card>
 
   <app-showcase-card cardTitle="InoSnackbar">

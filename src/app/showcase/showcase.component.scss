@@ -19,3 +19,14 @@ ino-header {
 ino-list {
   width: 100%;
 }
+
+ino-input-file {
+  width: 90%;
+  .ino-input-file__dnd {
+    height: 200px;
+  }
+}
+
+ino-input {
+  width: 100%;
+}

@@ -1,0 +1,15 @@
+@use "../../styles/colors";
+
+.content {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: center;
+}
+
+.divider {
+  width: 100%;
+  height: 1px;
+  background-color: colors.$light;
+  margin: 5px 0 40px 0;
+}

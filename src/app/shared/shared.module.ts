@@ -1,7 +1,6 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { TodoService } from './services/todo.service';
-import { DividerComponent } from './components/divider/divider.component';
 
 @NgModule({
     imports: [
@@ -11,10 +10,8 @@ import { DividerComponent } from './components/divider/divider.component';
         TodoService
     ],
     exports: [
-        DividerComponent
     ],
     declarations: [
-        DividerComponent
     ]
 })
 export class SharedModule { }

@@ -1,16 +1,16 @@
-import { BrowserModule } from '@angular/platform-browser';
-import { CUSTOM_ELEMENTS_SCHEMA, NgModule } from '@angular/core';
+import {BrowserModule} from '@angular/platform-browser';
+import {CUSTOM_ELEMENTS_SCHEMA, NgModule} from '@angular/core';
 
-import { InoElementsModule } from '@inovex.de/elements-angular';
+import {InoElementsModule} from '@inovex.de/elements-angular';
 
-import { AppComponent } from './app.component';
-import { SharedModule } from './shared/shared.module';
-import { AppRoutingModule } from './app-routing.module';
-import { ShowcaseComponent } from './showcase/showcase.component';
-import { NavigationComponent } from './navigation/navigation.component';
-import { TodoListComponent } from './todo-list/todo-list.component';
-import { ShowcaseCardComponent } from './showcase-card/showcase-card.component';
-import { InoButtonShowcaseComponent } from './showcases/ino-button-showcase/ino-button-showcase.component';
+import {AppComponent} from './app.component';
+import {SharedModule} from './shared/shared.module';
+import {AppRoutingModule} from './app-routing.module';
+import {ShowcaseComponent} from './showcase/showcase.component';
+import {NavigationComponent} from './navigation/navigation.component';
+import {TodoListComponent} from './todo-list/todo-list.component';
+import {ShowcaseCardComponent} from './showcase-card/showcase-card.component';
+import {InoButtonShowcaseComponent} from './showcases/ino-button-showcase/ino-button-showcase.component';
 
 @NgModule({
   declarations: [AppComponent, ShowcaseComponent, NavigationComponent, TodoListComponent, ShowcaseCardComponent, InoButtonShowcaseComponent],
@@ -19,4 +19,5 @@ import { InoButtonShowcaseComponent } from './showcases/ino-button-showcase/ino-
   bootstrap: [AppComponent],
   schemas: [CUSTOM_ELEMENTS_SCHEMA],
 })
-export class AppModule {}
+export class AppModule {
+}

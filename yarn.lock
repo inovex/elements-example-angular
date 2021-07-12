@@ -1028,18 +1028,18 @@
     lodash "^4.17.19"
     to-fast-properties "^2.0.0"
 
-"@inovex.de/elements-angular@^3.0.1":
-  version "3.0.1"
-  resolved "https://registry.yarnpkg.com/@inovex.de/elements-angular/-/elements-angular-3.0.1.tgz#edf0172a3007af0e677b0ec00218be7067b2dfc2"
-  integrity sha512-hsgzLM1iruamZ8scch3l0SD4YWyFH/8SfzhU7a9wJrHrNoJ8BvZjyOjxDTZrzX0qlj+EEyY11tkes4RxwisBJQ==
+"@inovex.de/elements-angular@^4.0.0":
+  version "4.0.0"
+  resolved "https://registry.yarnpkg.com/@inovex.de/elements-angular/-/elements-angular-4.0.0.tgz#124ef5f916b22fbac4ad826b3706fd745944f78a"
+  integrity sha512-JOZAb417e5mkAvfOFDTSn8nyEA1UBJoqZ3VXxk8nVcYSTP0okNxpDWo1x5/sF1APkYzYFyuHDGAnPUzF6eSqow==
   dependencies:
-    "@inovex.de/elements" "^3.0.1"
-    tslib "^2.0.0"
+    "@inovex.de/elements" "^4.0.0"
+    tslib "^2.2.0"
 
-"@inovex.de/elements@^3.0.1":
-  version "3.0.1"
-  resolved "https://registry.yarnpkg.com/@inovex.de/elements/-/elements-3.0.1.tgz#1bb2b85b5a6961580b54d3d74aab597dcccd279c"
-  integrity sha512-IUkBhrNUzGb1oggvSqiA1H2w0/5ZIn6vuPs30G8SVujloaF3aMB25jJyjV2nldzpSVogQjsMvzdH0fPR1NBjmg==
+"@inovex.de/elements@^4.0.0":
+  version "4.0.0"
+  resolved "https://registry.yarnpkg.com/@inovex.de/elements/-/elements-4.0.0.tgz#fcc76b6ec64b65dbbd7d2e99aec7a67812874b72"
+  integrity sha512-KF4lDLH+d/+YGX+FgmET2VYtHiFCHhdPzhm3p4mWgprtkjbQcLjO8vHm/2Cz/CqL/dPVE1Q7xR2X9NetyxWF3w==
   dependencies:
     "@material/button" "^8.0.0"
     "@material/card" "^8.0.0"
@@ -4744,6 +4744,11 @@ hex-color-regex@^1.1.0:
   version "1.1.0"
   resolved "https://registry.yarnpkg.com/hex-color-regex/-/hex-color-regex-1.1.0.tgz#4c06fccb4602fe2602b3c93df82d7e7dbf1a8a8e"
   integrity sha512-l9sfDFsuqtOqKDsQdqrMRk0U85RZc0RtOR9yPI7mRVOa4FsR/BVnZ0shmQRM96Ji99kYZP/7hn1cedc1+ApsTQ==
+
+highlight.js@^11.1.0:
+  version "11.1.0"
+  resolved "https://registry.yarnpkg.com/highlight.js/-/highlight.js-11.1.0.tgz#0198f7326e64ddfbea5f76b00e84ab542cf24ae8"
+  integrity sha512-X9VVhYKHQPPuwffO8jk4bP/FVj+ibNCy3HxZZNDXFtJrq4O5FdcdCDRIkDis5MiMnjh7UwEdHgRZJcHFYdzDdA==
 
 hmac-drbg@^1.0.0:
   version "1.0.1"
@@ -9028,6 +9033,11 @@ tslib@^2.0.0:
   version "2.0.3"
   resolved "https://registry.yarnpkg.com/tslib/-/tslib-2.0.3.tgz#8e0741ac45fc0c226e58a17bfc3e64b9bc6ca61c"
   integrity sha512-uZtkfKblCEQtZKBF6EBXVZeQNl82yqtDQdv+eck8u7tdPxjLu2/lp5/uPW+um2tpuxINHWy3GhiccY7QgEaVHQ==
+
+tslib@^2.2.0:
+  version "2.3.0"
+  resolved "https://registry.yarnpkg.com/tslib/-/tslib-2.3.0.tgz#803b8cdab3e12ba581a4ca41c8839bbb0dacb09e"
+  integrity sha512-N82ooyxVNm6h1riLCoyS9e3fuJ3AMG2zIZs2Gd1ATcSFjSA23Q0fzjjZeh0jbJvWVDZ0cJT8yaNNaaXHzueNjg==
 
 tslint@~6.1.0:
   version "6.1.3"

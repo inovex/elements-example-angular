@@ -10,21 +10,9 @@ export class ShowcaseComponent implements OnInit {
 
   constructor() { }
 
-  @Input() dialogOpen = false;
-
-  @HostListener('openChange', ['$event'])
-  public onOpenChange(event: any): void
-  {
-    event.stopPropagation();
-  }
+  @Input() component: string;
 
   ngOnInit(): void {
 
-  }
-
-
-  toggleDialog() {
-    console.debug(`Dialog is open: ${this.dialogOpen}`);
-    this.dialogOpen = !this.dialogOpen;
   }
 }

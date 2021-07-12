@@ -2,25 +2,25 @@
 
   <app-showcase-card cardTitle="InoButton">
     <ino-button>Solid Primary</ino-button>
-    <ino-button inoColorScheme="secondary">Secondary Solid</ino-button>
+    <ino-button colorScheme="secondary">Secondary Solid</ino-button>
     <ino-button disabled>Disabled</ino-button>
   </app-showcase-card>
 
   <app-showcase-card cardTitle="InoChip">
-    <ino-chip inoLabel="Primary" inoColorScheme="primary"></ino-chip>
-    <ino-chip inoLabel="Secondary" inoColorScheme="secondary"></ino-chip>
-    <ino-chip inoLabel="Leading Icon" inoIcon="search" inoColorScheme="error"></ino-chip>
+    <ino-chip label="Primary" colorScheme="primary"></ino-chip>
+    <ino-chip label="Secondary" colorScheme="secondary"></ino-chip>
+    <ino-chip label="Leading Icon" icon="search" colorScheme="error"></ino-chip>
   </app-showcase-card>
 
   <app-showcase-card cardTitle="InoFab">
-    <ino-fab inoIcon="add" inoLabel="InoFab"></ino-fab>
-    <ino-fab inoIcon="info" inoLabel="Extended" inoExtended></ino-fab>
+    <ino-fab icon="add" label="InoFab"></ino-fab>
+    <ino-fab icon="info" label="Extended" extended></ino-fab>
   </app-showcase-card>
 
-  <app-showcase-card cardTitle="InoIconButton">
-    <ino-icon-button inoIcon="star" inoColorScheme="primary"></ino-icon-button>
-    <ino-icon-button inoIcon="star" inoColorScheme="secondary" inoFilled></ino-icon-button>
-    <ino-icon-button inoIcon="star" inoColorScheme="error"></ino-icon-button>
+  <app-showcase-card cardTitle="IconButton">
+    <ino-icon-button icon="star" colorScheme="primary"></ino-icon-button>
+    <ino-icon-button icon="star" colorScheme="secondary" filled></ino-icon-button>
+    <ino-icon-button icon="star" colorScheme="error"></ino-icon-button>
   </app-showcase-card>
 
   <app-showcase-card cardTitle="InoSegmentButton">
@@ -36,34 +36,34 @@
   </app-showcase-card>
 
   <app-showcase-card cardTitle="InoHeader">
-    <ino-header inoTitle="Section 1.1"></ino-header>
-    <ino-header inoTitle="Section 1.2"></ino-header>
-    <ino-header inoTitle="Section 1.3"></ino-header>
+    <ino-header title="Section 1.1"></ino-header>
+    <ino-header title="Section 1.2"></ino-header>
+    <ino-header title="Section 1.3"></ino-header>
   </app-showcase-card>
 
   <app-showcase-card cardTitle="InoList">
     <ino-list>
-      <ino-control-item inoRole="checkbox" inoText="ToDo 1" checked></ino-control-item>
-      <ino-control-item inoRole="checkbox" inoText="ToDo 2"></ino-control-item>
-      <ino-control-item inoRole="checkbox" inoText="ToDo 3"></ino-control-item>
+      <ino-control-item role="checkbox" text="ToDo 1" checked></ino-control-item>
+      <ino-control-item role="checkbox" text="ToDo 2"></ino-control-item>
+      <ino-control-item role="checkbox" text="ToDo 3"></ino-control-item>
     </ino-list>
   </app-showcase-card>
 
   <app-showcase-card cardTitle="InoMenu">
     <!-- TODO -->
-    <ino-button (click)="toggleDialog()"></ino-button>
+    <ino-button></ino-button>
   </app-showcase-card>
 
   <app-showcase-card cardTitle="InoTabBar">
-    <ino-tab-bar inoActiveTab="1">
-      <ino-tab inoLabel="Home" inoIcon="company" inoStacked></ino-tab>
-      <ino-tab inoLabel="Projects" inoIcon="web" inoStacked></ino-tab>
+    <ino-tab-bar activeTab="1">
+      <ino-tab label="Home" icon="company" stacked></ino-tab>
+      <ino-tab label="Projects" icon="web" stacked></ino-tab>
     </ino-tab-bar>
   </app-showcase-card>
 
   <app-showcase-card cardTitle="InoTable">
     <ino-table>
-      <ino-table-row inoHeaderRow>
+      <ino-table-row headerRow>
         <ino-table-cell>Name</ino-table-cell>
         <ino-table-cell>Rating</ino-table-cell>
       </ino-table-row>
@@ -86,12 +86,12 @@
     <!-- TODO -->
   </app-showcase-card>
 
-  <app-showcase-card cardTitle="InoIcon">
-    <ino-icon inoIcon="info"></ino-icon>
-    <ino-icon inoIcon="search"></ino-icon>
-    <ino-icon inoIcon="add"></ino-icon>
-    <ino-icon inoIcon="company"></ino-icon>
-    <ino-icon inoIcon="user"></ino-icon>
+  <app-showcase-card cardTitle="Icon">
+    <ino-icon icon="info"></ino-icon>
+    <ino-icon icon="search"></ino-icon>
+    <ino-icon icon="add"></ino-icon>
+    <ino-icon icon="company"></ino-icon>
+    <ino-icon icon="user"></ino-icon>
   </app-showcase-card>
 
   <app-showcase-card cardTitle="InoImgList">
@@ -110,18 +110,18 @@
   </app-showcase-card>
 
   <app-showcase-card cardTitle="InoDatepicker">
-    <ino-datepicker inoType="date" inoLabel="Date"></ino-datepicker>
-    <ino-datepicker inoType="time" inoLabel="Time"></ino-datepicker>
+    <ino-datepicker type="date" label="Date"></ino-datepicker>
+    <ino-datepicker type="time" label="Time"></ino-datepicker>
   </app-showcase-card>
 
   <app-showcase-card cardTitle="InoInputFile">
-    <ino-input-file inoDragAndDrop></ino-input-file>
+    <ino-input-file dragAndDrop></ino-input-file>
   </app-showcase-card>
 
   <app-showcase-card cardTitle="InoInput">
-    <ino-input inoLabel="Default Input"></ino-input>
-    <ino-input inoLabel="Input with icon">
-      <ino-icon inoIcon="search" slot="ino-icon-leading"></ino-icon>
+    <ino-input label="Default Input"></ino-input>
+    <ino-input label="Input with icon">
+      <ino-icon icon="search" slot="ino-icon-leading"></ino-icon>
     </ino-input>
   </app-showcase-card>
 
@@ -133,8 +133,8 @@
 
   <app-showcase-card cardTitle="InoRange">
     <ino-range min="0" max="100" value="0"></ino-range>
-    <ino-range min="0" max="100" value="69" inoColorScheme="warning"></ino-range>
-    <ino-range min="0" max="100" value="45" inoColorScheme="secondary" inoDiscrete inoMarkers step="5"></ino-range>
+    <ino-range min="0" max="100" value="69" colorScheme="warning"></ino-range>
+    <ino-range min="0" max="100" value="45" colorScheme="secondary" discrete markers step="5"></ino-range>
   </app-showcase-card>
 
   <app-showcase-card cardTitle="InoSelect">
@@ -152,29 +152,29 @@
 
   <app-showcase-card cardTitle="InoSwitch">
     <ino-switch>Unchecked</ino-switch>
-    <ino-switch checked inoColorScheme="secondary">Checked</ino-switch>
+    <ino-switch checked colorScheme="secondary">Checked</ino-switch>
     <ino-switch disabled>Disabled</ino-switch>
   </app-showcase-card>
 
-  <app-showcase-card cardTitle="InoTextarea">
-    <ino-textarea inoLabel="InoTextarea" rows="8"></ino-textarea>
+  <app-showcase-card cardTitle="textarea">
+    <ino-textarea label="textarea" rows="8"></ino-textarea>
   </app-showcase-card>
 
   <app-showcase-card cardTitle="InoPopover">
-    <ino-popover inoTrigger="mouseenter" inoPlacement="top">
+    <ino-popover trigger="mouseenter" placement="top">
       <ino-button slot="ino-popover-trigger">Mouseenter</ino-button>
       InoPopover
     </ino-popover>
-    <ino-popover inoTrigger="click" inoColorScheme="secondary" inoPlacement="top">
-      <ino-button slot="ino-popover-trigger" inoColorScheme="secondary">Click</ino-button>
+    <ino-popover trigger="click" colorScheme="secondary" placement="top">
+      <ino-button slot="ino-popover-trigger" colorScheme="secondary">Click</ino-button>
       InoPopover
     </ino-popover>
   </app-showcase-card>
 
   <app-showcase-card cardTitle="InoProgressBar">
-    <ino-progress-bar inoProgress="0.7"></ino-progress-bar>
-    <ino-progress-bar inoProgress="0.3" inoBuffer="0.67"></ino-progress-bar>
-    <ino-progress-bar inoProgress="0.3" inoBuffer="0.67" inoIndeterminate></ino-progress-bar>
+    <ino-progress-bar progress="0.7"></ino-progress-bar>
+    <ino-progress-bar progress="0.3" buffer="0.67"></ino-progress-bar>
+    <ino-progress-bar progress="0.3" buffer="0.67" indeterminate></ino-progress-bar>
   </app-showcase-card>
 
   <app-showcase-card cardTitle="InoSnackbar">

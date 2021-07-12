@@ -10,10 +10,10 @@ import { ShowcaseComponent } from './showcase/showcase.component';
 import { NavigationComponent } from './navigation/navigation.component';
 import { TodoListComponent } from './todo-list/todo-list.component';
 import { ShowcaseCardComponent } from './showcase-card/showcase-card.component';
-import { ShowcaseDialogComponent } from './showcase-dialog/showcase-dialog.component';
+import { InoButtonShowcaseComponent } from './showcases/ino-button-showcase/ino-button-showcase.component';
 
 @NgModule({
-  declarations: [AppComponent, ShowcaseComponent, NavigationComponent, TodoListComponent, ShowcaseCardComponent, ShowcaseDialogComponent],
+  declarations: [AppComponent, ShowcaseComponent, NavigationComponent, TodoListComponent, ShowcaseCardComponent, InoButtonShowcaseComponent],
   imports: [BrowserModule, SharedModule, InoElementsModule.forRoot(), AppRoutingModule],
   providers: [],
   bootstrap: [AppComponent],

@@ -20,5 +20,10 @@ export class AppComponent {
       url: 'todo-list',
       icon: 'checkmark',
     },
+    {
+      text: 'InoButton',
+      url: 'showcase/ino-button',
+      icon: 'search'
+    }
   ];
 }

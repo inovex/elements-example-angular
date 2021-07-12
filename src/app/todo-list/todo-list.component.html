@@ -2,18 +2,16 @@
   <div class="action-box">
     <ino-input
       (keyup.enter)="add()"
-      ino-icon-clickable
-      ino-icon-trailing
       type="text"
       [value]="newTodoName"
       (keyup)="onValueChanged($event)"
       placeholder="What needs to be done..."
     >
       <ino-icon
-        inoClickable="true"
+        clickable="true"
         (clickEl)="add()"
-        slot="ino-icon-trailing"
-        ino-icon="add"
+        slot="icon-trailing"
+        icon="add"
       ></ino-icon>
     </ino-input>
   </div>
@@ -21,11 +19,11 @@
   <ino-list>
     <ino-list-item
       *ngFor="let todo of todos; index as i"
-      inoText="{{ todo.name }}"
+      text="{{ todo.name }}"
     >
       <ino-checkbox slot="ino-leading" (click)="delete(i, todo)"></ino-checkbox>
       <ino-button
-        inoFill="outline"
+        fill="outline"
         slot="ino-trailing"
         (click)="delete(i, todo)"
       >Delete</ino-button

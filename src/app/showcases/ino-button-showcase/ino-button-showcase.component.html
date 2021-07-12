@@ -1,5 +1,8 @@
 <div class="story-button">
-  <h4>Variations</h4>
+
+  <h3>Variations</h3>
+  <app-divider></app-divider>
+
   <div class="button-row">
     <ino-button fill="solid">Solid Primary</ino-button>
     <ino-button fill="outline">Outline Primary</ino-button>
@@ -23,7 +26,9 @@
     </div>
   </div>
 
-  <h4>With icons</h4>
+  <h3>With icons</h3>
+  <app-divider></app-divider>
+
   <div class="button-row">
     <ino-button>
       <ino-icon icon="info" slot="icon-leading"></ino-icon>
@@ -34,7 +39,10 @@
       Button Icon right
     </ino-button>
   </div>
-  <h4>States</h4>
+
+  <h3>States</h3>
+  <app-divider></app-divider>
+
   <div class="button-row">
     <ino-button disabled>Disabled</ino-button>
     <ino-button disabled fill="outline">Disabled outlined</ino-button>
@@ -42,5 +50,20 @@
     <ino-button dense="true">Dense</ino-button>
     <ino-button loading="true">Loading button</ino-button>
     <ino-button loading="true" fill="outline">Loading button</ino-button>
+  </div>
+
+  <h3>Forms</h3>
+  <app-divider></app-divider>
+
+  <div class="story-button">
+    <form class="reset-form">
+      <ino-input
+        class="reset-input"
+        placeholder="Input in reset form"
+        value="Value"
+      ></ino-input>
+      <ino-button type="submit">Submit</ino-button>
+      <ino-button type="reset">Reset</ino-button>
+    </form>
   </div>
 </div>

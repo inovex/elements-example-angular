@@ -1,8 +1,17 @@
+@use "styles/colors";
+@use "styles/fonts";
+
 html {
   height: 100%;
 }
 
 body {
   height: 100%;
+  margin: 0;
+}
+
+h1, h2, h3, h4 {
+  color: colors.$dark;
+  font: fonts.$font-family-sans-serif;
   margin: 0;
 }

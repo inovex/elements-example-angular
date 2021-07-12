@@ -1,0 +1,11 @@
+@use "../../../../styles/colors";
+
+app-divider {
+  width: 100%;
+}
+
+.divider {
+  height: 1px;
+  background-color: colors.$light;
+  margin: 5px 0 40px 0;
+}

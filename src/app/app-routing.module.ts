@@ -7,6 +7,7 @@ import {InoChipShowcaseComponent} from './showcases/ino-chip-showcase/ino-chip-s
 import {InoChipSetShowcaseComponent} from './showcases/ino-chip-set-showcase/ino-chip-set-showcase.component';
 import {InoFabShowcaseComponent} from './showcases/ino-fab-showcase/ino-fab-showcase.component';
 import {InoIconButtonShowcaseComponent} from './showcases/ino-icon-button-showcase/ino-icon-button-showcase.component';
+import {InoSegmentButtonShowcaseComponent} from './showcases/ino-segment-button-showcase/ino-segment-button-showcase.component';
 
 const routes: Routes = [
   { path: '', redirectTo: 'todo-list', pathMatch: 'full' },
@@ -17,6 +18,7 @@ const routes: Routes = [
   { path: 'showcase/ino-chip-set', component: InoChipSetShowcaseComponent },
   { path: 'showcase/ino-fab', component: InoFabShowcaseComponent },
   { path: 'showcase/ino-icon-button', component: InoIconButtonShowcaseComponent },
+  { path: 'showcase/ino-segment-button', component: InoSegmentButtonShowcaseComponent },
 ];
 
 @NgModule({

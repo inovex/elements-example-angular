@@ -1,0 +1,31 @@
+ino-dialog {
+  --ino-dialog-height: 300px;
+  --ino-dialog-width: 400px;
+}
+
+.dialog-header {
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 0 5px 0 5px;
+}
+
+.dialog-body {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0 5px 0 5px;
+}
+
+.dialog-footer {
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 0 5px 0 5px;
+}

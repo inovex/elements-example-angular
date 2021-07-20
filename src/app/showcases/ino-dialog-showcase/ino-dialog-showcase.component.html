@@ -1,0 +1,15 @@
+<app-showcase-section title="Simple dialog with header and footer">
+  <ino-button (click)="toggleDialog()">Open Dialog</ino-button>
+  <ino-dialog [open]="dialogOpen">
+    <div class="dialog-header" slot="header">
+      <ino-icon-button icon="close" (clickEl)="toggleDialog()"></ino-icon-button>
+    </div>
+    <div class="dialog-body">
+      <p>Are you sure you want to delete all your files?</p>
+    </div>
+    <div class="dialog-footer" slot="footer">
+      <ino-button colorScheme="secondary" (click)="toggleDialog()">Confirm</ino-button>
+      <ino-button (click)="toggleDialog()">Cancel</ino-button>
+    </div>
+  </ino-dialog>
+</app-showcase-section>

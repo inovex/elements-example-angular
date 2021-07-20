@@ -1,17 +1,40 @@
-<app-showcase-section title="">
-  <ino-card>
+<app-showcase-section title="Selectable card">
+  <ino-card (click)="onClick()" [selected]="selected">
     <div slot="header" class="card-header">
       <ino-icon icon="info" clickable></ino-icon>
     </div>
     <div slot="content" class="card-content--vertical">
       <ino-img
+        height="250"
+        width="250"
         src="https://cdn-images-1.medium.com/max/1600/1*HP8l7LMMt7Sh5UoO1T-yLQ.png"
       ></ino-img>
     </div>
     <div slot="footer" class="card-footer">
-      <ino-segment-group>
-        <ino-segment-button value="1" class="like-button">Like</ino-segment-button>
-        <ino-segment-button value="2" class="dislike-button">Dislike</ino-segment-button>
+      <ino-segment-group [value]="selectedBtn[0]">
+        <ino-segment-button value="1" class="like-button" (checkedChange)="onCheckedChange(0, '1')">Like</ino-segment-button>
+        <ino-segment-button value="2" class="dislike-button" (checkedChange)="onCheckedChange(0, '2')">Dislike</ino-segment-button>
+      </ino-segment-group>
+    </div>
+  </ino-card>
+</app-showcase-section>
+
+<app-showcase-section title="Static card">
+  <ino-card disableElevation>
+    <div slot="header" class="card-header">
+      <ino-icon icon="info" clickable></ino-icon>
+    </div>
+    <div slot="content" class="card-content--vertical">
+      <ino-img
+        height="250"
+        width="250"
+        src="https://cdn-images-1.medium.com/max/1600/1*HP8l7LMMt7Sh5UoO1T-yLQ.png"
+      ></ino-img>
+    </div>
+    <div slot="footer" class="card-footer">
+      <ino-segment-group [value]="selectedBtn[1]">
+        <ino-segment-button value="1" class="like-button" (checkedChange)="onCheckedChange(1, '1')">Like</ino-segment-button>
+        <ino-segment-button value="2" class="dislike-button" (checkedChange)="onCheckedChange(1, '2')">Dislike</ino-segment-button>
       </ino-segment-group>
     </div>
   </ino-card>

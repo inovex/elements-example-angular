@@ -5,11 +5,21 @@ import { Component, OnInit } from '@angular/core';
   templateUrl: './ino-card-showcase.component.html',
   styleUrls: ['./ino-card-showcase.component.scss']
 })
-export class InoCardShowcaseComponent implements OnInit {
+export class InoCardShowcaseComponent {
 
-  constructor() { }
+  selected = false;
+  selectedBtn: string[] = [
+    null,
+    null
+  ];
 
-  ngOnInit(): void {
+  onClick() {
+    this.selected = !this.selected;
   }
 
+  onCheckedChange(groupId: number, value: string) {
+    if (groupId in this.selectedBtn) {
+      this.selectedBtn[groupId] = value;
+    }
+  }
 }

@@ -27,13 +27,19 @@ ino-card {
 
   .like-button {
     --ino-segment-button-hover-color: #9ccd00;
+    --ino-segment-button-checked-color: #3ecd00;
     --segment-button-hover-shadow: #{0 4px 8px 0 rgba(157, 205, 0, 0.3),
     0 12px 28px 0 rgba(157, 205, 0, 0.14)};
+    --segment-button-checked-shadow: #{0 4px 8px 0 rgba(62, 205, 0, 0.3),
+    0 12px 28px 0 rgba(62, 205, 0, 0.14)};
   }
 
   .dislike-button {
     --ino-segment-button-hover-color: #e00051;
+    --ino-segment-button-checked-color: #a31717;
     --segment-button-hover-shadow: #{0 4px 8px 0 rgba(224, 0, 82, 0.3),
     0 12px 28px 0 rgba(224, 0, 82, 0.14)};
+    --segment-button-checked-shadow: #{0 4px 8px 0 rgba(163, 23, 23, 0.3),
+    0 12px 28px 0 rgba(163, 23, 23, 0.14)};
   }
 }

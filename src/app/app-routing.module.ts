@@ -9,6 +9,7 @@ import {InoFabShowcaseComponent} from './showcases/ino-fab-showcase/ino-fab-show
 import {InoIconButtonShowcaseComponent} from './showcases/ino-icon-button-showcase/ino-icon-button-showcase.component';
 import {InoSegmentButtonShowcaseComponent} from './showcases/ino-segment-button-showcase/ino-segment-button-showcase.component';
 import {InoCardShowcaseComponent} from './showcases/ino-card-showcase/ino-card-showcase.component';
+import {InoListShowcaseComponent} from './showcases/ino-list-showcase/ino-list-showcase.component';
 
 const routes: Routes = [
   { path: '', redirectTo: 'todo-list', pathMatch: 'full' },
@@ -21,6 +22,7 @@ const routes: Routes = [
   { path: 'showcase/ino-icon-button', component: InoIconButtonShowcaseComponent },
   { path: 'showcase/ino-segment-button', component: InoSegmentButtonShowcaseComponent },
   { path: 'showcase/ino-card', component: InoCardShowcaseComponent },
+  { path: 'showcase/ino-list', component: InoListShowcaseComponent },
 ];
 
 @NgModule({

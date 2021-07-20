@@ -1,0 +1,57 @@
+<app-showcase-section title="List items with two lines">
+  <ino-list twoLines>
+    <ino-list-item text="First text item" secondaryText="Secondary"></ino-list-item>
+    <ino-list-item text="Second text item" secondaryText="Secondary"></ino-list-item>
+    <ino-list-item text="Third text item" secondaryText="Secondary"></ino-list-item>
+  </ino-list>
+</app-showcase-section>
+
+<app-showcase-section title="Dense list">
+  <ino-list dense>
+    <ino-list-item text="First text item"></ino-list-item>
+    <ino-list-item text="Second text item"></ino-list-item>
+    <ino-list-item text="Third text item"></ino-list-item>
+  </ino-list>
+  <ino-list twoLines dense>
+    <ino-list-item text="First text item" secondaryText="Secondary"></ino-list-item>
+    <ino-list-item text="Second text item" secondaryText="Secondary"></ino-list-item>
+    <ino-list-item text="Third text item" secondaryText="Secondary"></ino-list-item>
+  </ino-list>
+</app-showcase-section>
+
+<app-showcase-section title="List with avatars">
+  <ino-list avatar>
+    <ino-list-item text="First text item">
+      <ng-container *ngTemplateOutlet="imgTemplate"></ng-container>
+    </ino-list-item>
+    <ino-list-item text="Second text item">
+      <ng-container *ngTemplateOutlet="imgTemplate"></ng-container>
+    </ino-list-item>
+  </ino-list>
+  <ino-list avatar dense>
+    <ino-list-item text="First text item">
+      <ng-container *ngTemplateOutlet="imgTemplate"></ng-container>
+    </ino-list-item>
+    <ino-list-item text="Second text item">
+      <ng-container *ngTemplateOutlet="imgTemplate"></ng-container>
+    </ino-list-item>
+  </ino-list>
+
+  <ino-list avatar twoLines>
+    <ino-list-item text="First text item" secondaryText="Secondary">
+      <ng-container *ngTemplateOutlet="imgTemplate"></ng-container>
+    </ino-list-item>
+    <ino-list-item text="Second text item" secondaryText="Secondary">
+      <ng-container *ngTemplateOutlet="imgTemplate"></ng-container>
+    </ino-list-item>
+  </ino-list>
+</app-showcase-section>
+
+<ng-template #imgTemplate>
+  <ino-img
+    slot="leading"
+    src="https://cdn-images-1.medium.com/max/1600/1*HP8l7LMMt7Sh5UoO1T-yLQ.png"
+    ratioWidth="1"
+    ratioHeight="1"
+  ></ino-img>
+</ng-template>

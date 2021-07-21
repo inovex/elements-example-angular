@@ -1,0 +1,120 @@
+<app-showcase-section title="States">
+  <ino-list>
+    <ino-list-item text="Simple item"></ino-list-item>
+    <ino-list-item selected text="Selected item"></ino-list-item>
+    <ino-list-item selected text="Selected item 2"></ino-list-item>
+    <ino-list-item text="Simple item 2"></ino-list-item>
+    <ino-list-item activated text="Activated item"></ino-list-item>
+    <ino-list-item disabled text="Disabled item"></ino-list-item>
+  </ino-list>
+</app-showcase-section>
+
+<app-showcase-section title="Graphic and Meta">
+  <ino-list>
+    <ino-list-item text="Lorem ipsum dolor sit">
+      <ng-container *ngTemplateOutlet="exampleImg"></ng-container>
+      <p slot="trailing">$10.00</p>
+    </ino-list-item>
+    <ino-list-item text="Lorem ipsum dolor sit">
+      <ng-container *ngTemplateOutlet="exampleImg"></ng-container>
+      <p slot="trailing">$10.00</p>
+    </ino-list-item>
+  </ino-list>
+</app-showcase-section>
+
+<app-showcase-section title="Checkboxes">
+  <ino-list>
+    <ino-list-item text="First text item">
+      <ino-checkbox slot="leading" selection></ino-checkbox>
+    </ino-list-item>
+    <ino-list-item text="Second text item">
+      <ino-checkbox slot="leading" selection></ino-checkbox>
+    </ino-list-item>
+  </ino-list>
+  <ino-list>
+    <ino-list-item text="Lorem ipsum dolor sit">
+      <ino-checkbox slot="trailing" selection></ino-checkbox>
+    </ino-list-item>
+    <ino-list-item text="Lorem ipsum dolor sit">
+      <ino-checkbox slot="trailing" selection></ino-checkbox>
+    </ino-list-item>
+  </ino-list>
+  <ino-list>
+    <ino-list-item text="Lorem ipsum dolor sit">
+      <ino-checkbox slot="leading" selection></ino-checkbox>
+      <p slot="trailing">Some Metdata</p>
+    </ino-list-item>
+    <ino-list-item text="Lorem ipsum dolor sit">
+      <ino-checkbox slot="leading" selection></ino-checkbox>
+      <p slot="trailing">Some Metdata</p>
+    </ino-list-item>
+  </ino-list>
+</app-showcase-section>
+
+<app-showcase-section title="Radios">
+  <ino-list>
+    <ino-list-item text="First text item">
+      <ino-radio slot="leading" name="group-1"></ino-radio>
+    </ino-list-item>
+    <ino-list-item text="Second text item">
+      <ino-radio slot="leading" name="group-1"></ino-radio>
+    </ino-list-item>
+  </ino-list>
+  <ino-list>
+    <ino-list-item text="Lorem ipsum dolor sit">
+      <ino-radio slot="trailing" name="group-5"></ino-radio>
+    </ino-list-item>
+    <ino-list-item text="Lorem ipsum dolor sit">
+      <ino-radio slot="trailing" name="group-5"></ino-radio>
+    </ino-list-item>
+  </ino-list>
+  <ino-list>
+    <ino-list-item text="Lorem ipsum dolor sit">
+      <ino-radio slot="leading" name="group-6"></ino-radio>
+      <p slot="trailing">Some Metadata</p>
+    </ino-list-item>
+    <ino-list-item text="Lorem ipsum dolor sit">
+      <ino-radio slot="leading" name="group-6"></ino-radio>
+      <p slot="trailing">Some Metadata</p>
+    </ino-list-item>
+  </ino-list>
+</app-showcase-section>
+
+<app-showcase-section title="Slotted Elements">
+  <ino-list>
+    <ino-list-item>
+      <ng-container *ngTemplateOutlet="exampleImg"></ng-container>
+      <a slot="primary" href="">Link Element</a>
+    </ino-list-item>
+  </ino-list>
+  <ino-list twoLines>
+    <ino-list-item>
+      <ng-container *ngTemplateOutlet="exampleImg"></ng-container>
+      <a slot="primary" href="">Primary Link Element</a>
+      <a slot="secondary" href="">Secondary Link Element</a>
+      <p slot="trailing">$10.00</p>
+    </ino-list-item>
+  </ino-list>
+</app-showcase-section>
+
+<app-showcase-section title="List Item with Two Lines">
+  <ino-list twoLines avatar>
+    <ino-list-item text="Lorem ipsum dolor sit" secondaryText="Secondary Lorem ipsum dolor sit">
+      <ng-container *ngTemplateOutlet="exampleImg"></ng-container>
+      <ino-icon slot="trailing" icon="info"></ino-icon>
+    </ino-list-item>
+    <ino-list-item text="Lorem ipsum dolor sit" secondaryText="Secondary Lorem ipsum dolor sit">
+      <ng-container *ngTemplateOutlet="exampleImg"></ng-container>
+      <ino-icon slot="trailing" icon="info"></ino-icon>
+    </ino-list-item>
+  </ino-list>
+</app-showcase-section>
+
+<ng-template #exampleImg>
+  <ino-img
+    slot="leading"
+    src="https://cdn-images-1.medium.com/max/1600/1*HP8l7LMMt7Sh5UoO1T-yLQ.png"
+    ratioWidth="1"
+    ratioHeight="1"
+  ></ino-img>
+</ng-template>

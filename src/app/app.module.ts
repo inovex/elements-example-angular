@@ -20,6 +20,7 @@ import { InoSegmentButtonShowcaseComponent } from './showcases/ino-segment-butto
 import { InoCardShowcaseComponent } from './showcases/ino-card-showcase/ino-card-showcase.component';
 import { InoListShowcaseComponent } from './showcases/ino-list-showcase/ino-list-showcase.component';
 import { InoDialogShowcaseComponent } from './showcases/ino-dialog-showcase/ino-dialog-showcase.component';
+import { InoListItemShowcaseComponent } from './showcases/ino-list-item-showcase/ino-list-item-showcase.component';
 
 @NgModule({
   declarations: [
@@ -37,7 +38,8 @@ import { InoDialogShowcaseComponent } from './showcases/ino-dialog-showcase/ino-
     InoSegmentButtonShowcaseComponent,
     InoCardShowcaseComponent,
     InoListShowcaseComponent,
-    InoDialogShowcaseComponent
+    InoDialogShowcaseComponent,
+    InoListItemShowcaseComponent,
   ],
   imports: [BrowserModule, SharedModule, InoElementsModule.forRoot(), AppRoutingModule],
   providers: [],

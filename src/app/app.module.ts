@@ -21,6 +21,7 @@ import { InoCardShowcaseComponent } from './showcases/ino-card-showcase/ino-card
 import { InoListShowcaseComponent } from './showcases/ino-list-showcase/ino-list-showcase.component';
 import { InoDialogShowcaseComponent } from './showcases/ino-dialog-showcase/ino-dialog-showcase.component';
 import { InoListItemShowcaseComponent } from './showcases/ino-list-item-showcase/ino-list-item-showcase.component';
+import { InoMenuShowcaseComponent } from './showcases/ino-menu-showcase/ino-menu-showcase.component';
 
 @NgModule({
   declarations: [
@@ -40,6 +41,7 @@ import { InoListItemShowcaseComponent } from './showcases/ino-list-item-showcase
     InoListShowcaseComponent,
     InoDialogShowcaseComponent,
     InoListItemShowcaseComponent,
+    InoMenuShowcaseComponent,
   ],
   imports: [BrowserModule, SharedModule, InoElementsModule.forRoot(), AppRoutingModule],
   providers: [],

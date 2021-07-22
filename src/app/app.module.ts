@@ -6,10 +6,8 @@ import {InoElementsModule} from '@inovex.de/elements-angular';
 import {AppComponent} from './app.component';
 import {SharedModule} from './shared/shared.module';
 import {AppRoutingModule} from './app-routing.module';
-import {ShowcaseComponent} from './showcase/showcase.component';
 import {NavigationComponent} from './navigation/navigation.component';
 import {TodoListComponent} from './todo-list/todo-list.component';
-import {ShowcaseCardComponent} from './showcase-card/showcase-card.component';
 import {InoButtonShowcaseComponent} from './showcases/ino-button-showcase/ino-button-showcase.component';
 import {InoChipShowcaseComponent} from './showcases/ino-chip-showcase/ino-chip-showcase.component';
 import {InoChipSetShowcaseComponent} from './showcases/ino-chip-set-showcase/ino-chip-set-showcase.component';
@@ -23,14 +21,13 @@ import { InoDialogShowcaseComponent } from './showcases/ino-dialog-showcase/ino-
 import { InoListItemShowcaseComponent } from './showcases/ino-list-item-showcase/ino-list-item-showcase.component';
 import { InoMenuShowcaseComponent } from './showcases/ino-menu-showcase/ino-menu-showcase.component';
 import { InoNavDrawerShowcaseComponent } from './showcases/ino-nav-drawer-showcase/ino-nav-drawer-showcase.component';
+import { InoCarouselShowcaseComponent } from './showcases/ino-carousel-showcase/ino-carousel-showcase.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    ShowcaseComponent,
     NavigationComponent,
     TodoListComponent,
-    ShowcaseCardComponent,
     InoButtonShowcaseComponent,
     InoChipShowcaseComponent,
     InoChipSetShowcaseComponent,
@@ -44,6 +41,7 @@ import { InoNavDrawerShowcaseComponent } from './showcases/ino-nav-drawer-showca
     InoListItemShowcaseComponent,
     InoMenuShowcaseComponent,
     InoNavDrawerShowcaseComponent,
+    InoCarouselShowcaseComponent,
   ],
   imports: [BrowserModule, SharedModule, InoElementsModule.forRoot(), AppRoutingModule],
   providers: [],

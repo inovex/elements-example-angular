@@ -1,6 +1,5 @@
 import { NgModule } from '@angular/core';
 import {RouterModule, Routes} from '@angular/router';
-import {ShowcaseComponent} from './showcase/showcase.component';
 import {TodoListComponent} from './todo-list/todo-list.component';
 import {InoButtonShowcaseComponent} from './showcases/ino-button-showcase/ino-button-showcase.component';
 import {InoChipShowcaseComponent} from './showcases/ino-chip-showcase/ino-chip-showcase.component';
@@ -14,11 +13,11 @@ import {InoDialogShowcaseComponent} from './showcases/ino-dialog-showcase/ino-di
 import {InoListItemShowcaseComponent} from './showcases/ino-list-item-showcase/ino-list-item-showcase.component';
 import {InoMenuShowcaseComponent} from './showcases/ino-menu-showcase/ino-menu-showcase.component';
 import {InoNavDrawerShowcaseComponent} from './showcases/ino-nav-drawer-showcase/ino-nav-drawer-showcase.component';
+import {InoCarouselShowcaseComponent} from './showcases/ino-carousel-showcase/ino-carousel-showcase.component';
 
 const routes: Routes = [
   { path: '', redirectTo: 'todo-list', pathMatch: 'full' },
   { path: 'todo-list', component: TodoListComponent },
-  { path: 'showcase', component: ShowcaseComponent },
   { path: 'showcase/ino-button', component: InoButtonShowcaseComponent },
   { path: 'showcase/ino-chip', component: InoChipShowcaseComponent },
   { path: 'showcase/ino-chip-set', component: InoChipSetShowcaseComponent },
@@ -31,6 +30,7 @@ const routes: Routes = [
   { path: 'showcase/ino-list-item', component: InoListItemShowcaseComponent },
   { path: 'showcase/ino-menu', component: InoMenuShowcaseComponent },
   { path: 'showcase/ino-nav-drawer', component: InoNavDrawerShowcaseComponent },
+  { path: 'showcase/ino-carousel', component: InoCarouselShowcaseComponent },
 ];
 
 @NgModule({

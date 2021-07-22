@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 import {Todo} from '../shared/models/todo';
 import {TodoService} from '../shared/services/todo.service';
 

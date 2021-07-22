@@ -1,0 +1,14 @@
+.nav-drawer-demo {
+  position: relative;
+  height: 500px;
+  border: 1px solid grey;
+  border-radius: 4px;
+  overflow: hidden;
+
+  .main-content {
+    box-sizing: border-box;
+    overflow: auto;
+    height: 100%;
+    padding: 30px;
+  }
+}

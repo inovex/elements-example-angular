@@ -1,0 +1,21 @@
+<app-showcase-section title="Enclosed Titles">
+  <ino-img-list encloseLabel>
+    <ino-img
+      *ngFor="let item of images | keyvalue"
+      src="../../../assets/imgs/{{item.value}}"
+      [label]="item.key"
+      imgListItem
+    ></ino-img>
+  </ino-img-list>
+</app-showcase-section>
+
+<app-showcase-section title="Masonry">
+  <ino-img-list masonry>
+    <ino-img
+      *ngFor="let item of images | keyvalue"
+      src="../../../assets/imgs/{{item.value}}"
+      [label]="item.key"
+      imgListItem
+    ></ino-img>
+  </ino-img-list>
+</app-showcase-section>

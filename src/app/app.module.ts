@@ -26,6 +26,7 @@ import { InoCheckboxShowcaseComponent } from './showcases/ino-checkbox-showcase/
 import { InoDatepickerShowcaseComponent } from './showcases/ino-datepicker-showcase/ino-datepicker-showcase.component';
 import { InoIconShowcaseComponent } from './showcases/ino-icon-showcase/ino-icon-showcase.component';
 import { InoImgShowcaseComponent } from './showcases/ino-img-showcase/ino-img-showcase.component';
+import { InoImgListShowcaseComponent } from './showcases/ino-img-list-showcase/ino-img-list-showcase.component';
 
 @NgModule({
   declarations: [
@@ -50,6 +51,7 @@ import { InoImgShowcaseComponent } from './showcases/ino-img-showcase/ino-img-sh
     InoDatepickerShowcaseComponent,
     InoIconShowcaseComponent,
     InoImgShowcaseComponent,
+    InoImgListShowcaseComponent,
   ],
   imports: [BrowserModule, SharedModule, InoElementsModule.forRoot(), AppRoutingModule],
   providers: [],

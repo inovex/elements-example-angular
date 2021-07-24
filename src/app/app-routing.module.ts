@@ -19,6 +19,7 @@ import {InoDatepickerShowcaseComponent} from './showcases/ino-datepicker-showcas
 import {InoIconShowcaseComponent} from './showcases/ino-icon-showcase/ino-icon-showcase.component';
 import {InoImgShowcaseComponent} from './showcases/ino-img-showcase/ino-img-showcase.component';
 import {InoImgListShowcaseComponent} from './showcases/ino-img-list-showcase/ino-img-list-showcase.component';
+import {InoInputShowcaseComponent} from './showcases/ino-input-showcase/ino-input-showcase.component';
 
 const routes: Routes = [
   { path: '', redirectTo: 'todo-list', pathMatch: 'full' },
@@ -41,6 +42,7 @@ const routes: Routes = [
   { path: 'showcase/ino-icon', component: InoIconShowcaseComponent },
   { path: 'showcase/ino-img', component: InoImgShowcaseComponent },
   { path: 'showcase/ino-img-list', component: InoImgListShowcaseComponent },
+  { path: 'showcase/ino-input', component: InoInputShowcaseComponent },
 ];
 
 @NgModule({

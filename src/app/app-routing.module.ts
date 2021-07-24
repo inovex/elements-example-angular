@@ -16,6 +16,7 @@ import {InoNavDrawerShowcaseComponent} from './showcases/ino-nav-drawer-showcase
 import {InoCarouselShowcaseComponent} from './showcases/ino-carousel-showcase/ino-carousel-showcase.component';
 import {InoCheckboxShowcaseComponent} from './showcases/ino-checkbox-showcase/ino-checkbox-showcase.component';
 import {InoDatepickerShowcaseComponent} from './showcases/ino-datepicker-showcase/ino-datepicker-showcase.component';
+import {InoIconShowcaseComponent} from './showcases/ino-icon-showcase/ino-icon-showcase.component';
 
 const routes: Routes = [
   { path: '', redirectTo: 'todo-list', pathMatch: 'full' },
@@ -35,6 +36,7 @@ const routes: Routes = [
   { path: 'showcase/ino-carousel', component: InoCarouselShowcaseComponent },
   { path: 'showcase/ino-checkbox', component: InoCheckboxShowcaseComponent },
   { path: 'showcase/ino-datepicker', component: InoDatepickerShowcaseComponent },
+  { path: 'showcase/ino-icon', component: InoIconShowcaseComponent },
 ];
 
 @NgModule({

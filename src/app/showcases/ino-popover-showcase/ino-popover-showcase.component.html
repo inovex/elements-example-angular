@@ -1,0 +1,49 @@
+<app-showcase-section title="Placement">
+  <ino-popover placement="left" for="popover-positions-target">
+    <div class="popover-content">This is a simple popover on the left.</div>
+  </ino-popover>
+  <ino-popover placement="right" for="popover-positions-target">
+    <div class="popover-content">This is a simple popover on the right.</div>
+  </ino-popover>
+  <ino-popover placement="top" for="popover-positions-target">
+    <div class="popover-content">This is a simple popover on the top.</div>
+  </ino-popover>
+  <ino-popover placement="bottom" for="popover-positions-target">
+    <div class="popover-content">This is a simple popover on the bottom.</div>
+  </ino-popover>
+  <ino-button class="placement-button" id="popover-positions-target">Popover</ino-button>
+</app-showcase-section>
+
+<app-showcase-section title="Interactions">
+  <ino-button id='popover-non-interactive'>Non-Interactive content</ino-button>
+  <ino-popover for='popover-non-interactive' trigger='click' color-scheme='transparent'>
+    <div class='popover-content'>
+      I'm not interactive. I will close on click. I should only be used for non-interactive content like this text.
+    </div>
+  </ino-popover>
+  <ino-popover trigger='click' placement='bottom' for='popover-interactive-target' color-scheme='transparent'
+               interactive>
+    <div class="interactive-popover">
+      <p>I'm interactive. You can click me without closing this popover!</p>
+      <ino-button>Button not closing the popover</ino-button>
+    </div>
+  </ino-popover>
+  <ino-button class='placement-button' id='popover-interactive-target'>Interactive Content</ino-button>
+</app-showcase-section>
+
+<app-showcase-section title="Trigger">
+  <ino-button id="popover-hover-focus">Hover & focus</ino-button>
+  <ino-popover for="popover-hover-focus" placement="top">
+    <div class="popover-content">This popover occurs on hover and focus.</div>
+  </ino-popover>
+
+  <ino-button id="popover-click">Click</ino-button>
+  <ino-popover for="popover-click" trigger="click" placement="bottom">
+    <div class="popover-content">This popover occurs on click.</div>
+  </ino-popover>
+
+  <ino-button id="popover-focus">Focus</ino-button>
+  <ino-popover class="popover-content" placement="right" for="popover-focus" trigger="focus">
+    <div class="popover-content">This popover occurs on focus.</div>
+  </ino-popover>
+</app-showcase-section>

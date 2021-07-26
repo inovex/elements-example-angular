@@ -29,6 +29,7 @@ import { InoImgShowcaseComponent } from './showcases/ino-img-showcase/ino-img-sh
 import { InoImgListShowcaseComponent } from './showcases/ino-img-list-showcase/ino-img-list-showcase.component';
 import { InoInputShowcaseComponent } from './showcases/ino-input-showcase/ino-input-showcase.component';
 import { InoInputFileShowcaseComponent } from './showcases/ino-input-file-showcase/ino-input-file-showcase.component';
+import { InoPopoverShowcaseComponent } from './showcases/ino-popover-showcase/ino-popover-showcase.component';
 
 @NgModule({
   declarations: [
@@ -56,6 +57,7 @@ import { InoInputFileShowcaseComponent } from './showcases/ino-input-file-showca
     InoImgListShowcaseComponent,
     InoInputShowcaseComponent,
     InoInputFileShowcaseComponent,
+    InoPopoverShowcaseComponent,
   ],
   imports: [BrowserModule, SharedModule, InoElementsModule.forRoot(), AppRoutingModule],
   providers: [],

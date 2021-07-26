@@ -1,0 +1,52 @@
+<app-showcase-section title="Select with No Label">
+  <ino-select>
+    <ino-option value="No Label" selected>Selected option</ino-option>
+    <ng-container [ngTemplateOutlet]="optionsTemplate"></ng-container>
+  </ino-select>
+</app-showcase-section>
+
+<app-showcase-section title="Select with Floating Label">
+  <ino-select label="Floating label">
+    <ino-option value="Selected Option" selected>Selected Option</ino-option>
+    <ng-container [ngTemplateOutlet]="optionsTemplate"></ng-container>
+  </ino-select>
+</app-showcase-section>
+
+<app-showcase-section title="Select with Outlined Floating Label">
+  <ino-select label="Floating label outlined" outline>
+    <ino-option value="Selected Option" selected>Selected Option</ino-option>
+    <ng-container [ngTemplateOutlet]="optionsTemplate"></ng-container>
+  </ino-select>
+</app-showcase-section>
+
+<app-showcase-section title="Disabled Select">
+  <ino-select disabled label="Disabled select">
+    <ino-option value="Selected Option" selected>Selected Option</ino-option>
+    <ng-container [ngTemplateOutlet]="optionsTemplate"></ng-container>
+  </ino-select>
+</app-showcase-section>
+
+<app-showcase-section title="Select with Disabled Option">
+  <ino-select label="Select with disabled option">
+    <ng-container [ngTemplateOutlet]="optionsTemplate"></ng-container>
+    <ino-option value="Disabled Option" disabled>Disabled Option</ino-option>
+  </ino-select>
+</app-showcase-section>
+
+<app-showcase-section title="Required Select">
+  <ino-select required label="Required select" showLabelHint>
+    <ng-container [ngTemplateOutlet]="optionsTemplate"></ng-container>
+  </ino-select>
+</app-showcase-section>
+
+<app-showcase-section title="Optional Select">
+  <ino-select label="Optional select" showLabelHint>
+    <ng-container [ngTemplateOutlet]="optionsTemplate"></ng-container>
+  </ino-select>
+</app-showcase-section>
+
+<ng-template #optionsTemplate>
+  <ino-option value="Option 1">Option 1</ino-option>
+  <ino-option value="Option 2">Option 2</ino-option>
+  <ino-option value="Option 3">Option 3</ino-option>
+</ng-template>

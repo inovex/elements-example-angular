@@ -28,6 +28,7 @@ import { InoIconShowcaseComponent } from './showcases/ino-icon-showcase/ino-icon
 import { InoImgShowcaseComponent } from './showcases/ino-img-showcase/ino-img-showcase.component';
 import { InoImgListShowcaseComponent } from './showcases/ino-img-list-showcase/ino-img-list-showcase.component';
 import { InoInputShowcaseComponent } from './showcases/ino-input-showcase/ino-input-showcase.component';
+import { InoInputFileShowcaseComponent } from './showcases/ino-input-file-showcase/ino-input-file-showcase.component';
 
 @NgModule({
   declarations: [
@@ -54,6 +55,7 @@ import { InoInputShowcaseComponent } from './showcases/ino-input-showcase/ino-in
     InoImgShowcaseComponent,
     InoImgListShowcaseComponent,
     InoInputShowcaseComponent,
+    InoInputFileShowcaseComponent,
   ],
   imports: [BrowserModule, SharedModule, InoElementsModule.forRoot(), AppRoutingModule],
   providers: [],

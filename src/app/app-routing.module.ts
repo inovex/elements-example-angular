@@ -20,6 +20,7 @@ import {InoIconShowcaseComponent} from './showcases/ino-icon-showcase/ino-icon-s
 import {InoImgShowcaseComponent} from './showcases/ino-img-showcase/ino-img-showcase.component';
 import {InoImgListShowcaseComponent} from './showcases/ino-img-list-showcase/ino-img-list-showcase.component';
 import {InoInputShowcaseComponent} from './showcases/ino-input-showcase/ino-input-showcase.component';
+import {InoInputFileShowcaseComponent} from './showcases/ino-input-file-showcase/ino-input-file-showcase.component';
 
 const routes: Routes = [
   { path: '', redirectTo: 'todo-list', pathMatch: 'full' },
@@ -43,6 +44,7 @@ const routes: Routes = [
   { path: 'showcase/ino-img', component: InoImgShowcaseComponent },
   { path: 'showcase/ino-img-list', component: InoImgListShowcaseComponent },
   { path: 'showcase/ino-input', component: InoInputShowcaseComponent },
+  { path: 'showcase/ino-input-file', component: InoInputFileShowcaseComponent },
 ];
 
 @NgModule({

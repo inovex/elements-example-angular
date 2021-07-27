@@ -29,6 +29,7 @@ import {InoSelectShowcaseComponent} from './showcases/ino-select-showcase/ino-se
 import {InoSnackbarShowcaseComponent} from './showcases/ino-snackbar-showcase/ino-snackbar-showcase.component';
 import {InoSpinnerShowcaseComponent} from './showcases/ino-spinner-showcase/ino-spinner-showcase.component';
 import {InoSwitchShowcaseComponent} from './showcases/ino-switch-showcase/ino-switch-showcase.component';
+import {InoTableShowcaseComponent} from './showcases/ino-table-showcase/ino-table-showcase.component';
 
 const routes: Routes = [
   { path: '', redirectTo: 'todo-list', pathMatch: 'full' },
@@ -61,6 +62,7 @@ const routes: Routes = [
   { path: 'showcase/ino-snackbar', component: InoSnackbarShowcaseComponent },
   { path: 'showcase/ino-spinner', component: InoSpinnerShowcaseComponent },
   { path: 'showcase/ino-switch', component: InoSwitchShowcaseComponent },
+  { path: 'showcase/ino-table', component: InoTableShowcaseComponent },
 ];
 
 @NgModule({

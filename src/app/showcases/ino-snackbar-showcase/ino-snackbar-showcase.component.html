@@ -1,0 +1,45 @@
+<app-showcase-section title="Snackbar Variants">
+  <ino-button class="snackbar-trigger" data-template-id="snackbar-with-action">Show Snackbar (With Action)</ino-button>
+  <ng-template id="snackbar-with-action">
+    <ino-snackbar [message]="sampleText" actionText="Anlegen"></ino-snackbar>
+  </ng-template>
+
+  <ino-button class="snackbar-trigger" data-template-id="snackbar-no-action">Show Snackbar (No Action)</ino-button>
+  <template id="snackbar-no-action">
+    <ino-snackbar [message]="sampleText"></ino-snackbar>
+  </template>
+
+  <ino-button class="snackbar-trigger" data-template-id="snackbar-no-timeout">Show Snackbar (Without timeout)</ino-button>
+  <template id="snackbar-no-timeout">
+    <ino-snackbar [message]="sampleText" timeout="-1"></ino-snackbar>
+  </template>
+</app-showcase-section>
+
+<app-showcase-section title="Snackbar Types">
+  <ino-button class="snackbar-trigger" data-template-id="snackbar-warning">Show Snackbar (warning)</ino-button>
+  <template id="snackbar-warning">
+    <ino-snackbar [message]="sampleText" type="warning"></ino-snackbar>
+  </template>
+
+  <ino-button class="snackbar-trigger" data-template-id="snackbar-error">Show Snackbar (error)</ino-button>
+  <template id="snackbar-error">
+    <ino-snackbar [message]="sampleText" type="error"></ino-snackbar>
+  </template>
+</app-showcase-section>
+
+<app-showcase-section title="Alignment Options">
+  <ino-button class="snackbar-trigger" data-template-id="snackbar-left-align">Left</ino-button>
+  <template id="snackbar-left-align">
+    <ino-snackbar [message]="sampleText" actionText="Anlegen" alignment="left"></ino-snackbar>
+  </template>
+
+  <ino-button class="snackbar-trigger" data-template-id="snackbar-center-align">Center</ino-button>
+  <template id="snackbar-center-align">
+    <ino-snackbar [message]="sampleText" actionText="Anlegen"></ino-snackbar>
+  </template>
+
+  <ino-button class="snackbar-trigger" data-template-id="snackbar-right-align">Right</ino-button>
+  <template id="snackbar-right-align">
+    <ino-snackbar [message]="sampleText" actionText="Anlegen" alignment="right"></ino-snackbar>
+  </template>
+</app-showcase-section>

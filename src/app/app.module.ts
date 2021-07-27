@@ -34,6 +34,7 @@ import { InoProgressBarShowcaseComponent } from './showcases/ino-progress-bar-sh
 import { InoRadioShowcaseComponent } from './showcases/ino-radio-showcase/ino-radio-showcase.component';
 import { InoRangeShowcaseComponent } from './showcases/ino-range-showcase/ino-range-showcase.component';
 import { InoSelectShowcaseComponent } from './showcases/ino-select-showcase/ino-select-showcase.component';
+import { InoSnackbarShowcaseComponent } from './showcases/ino-snackbar-showcase/ino-snackbar-showcase.component';
 
 @NgModule({
   declarations: [
@@ -66,6 +67,7 @@ import { InoSelectShowcaseComponent } from './showcases/ino-select-showcase/ino-
     InoRadioShowcaseComponent,
     InoRangeShowcaseComponent,
     InoSelectShowcaseComponent,
+    InoSnackbarShowcaseComponent,
   ],
   imports: [BrowserModule, SharedModule, InoElementsModule.forRoot(), AppRoutingModule],
   providers: [],

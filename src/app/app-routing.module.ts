@@ -26,6 +26,7 @@ import {InoProgressBarShowcaseComponent} from './showcases/ino-progress-bar-show
 import {InoRadioShowcaseComponent} from './showcases/ino-radio-showcase/ino-radio-showcase.component';
 import {InoRangeShowcaseComponent} from './showcases/ino-range-showcase/ino-range-showcase.component';
 import {InoSelectShowcaseComponent} from './showcases/ino-select-showcase/ino-select-showcase.component';
+import {InoSnackbarShowcaseComponent} from './showcases/ino-snackbar-showcase/ino-snackbar-showcase.component';
 
 const routes: Routes = [
   { path: '', redirectTo: 'todo-list', pathMatch: 'full' },
@@ -55,6 +56,7 @@ const routes: Routes = [
   { path: 'showcase/ino-radio', component: InoRadioShowcaseComponent },
   { path: 'showcase/ino-range', component: InoRangeShowcaseComponent },
   { path: 'showcase/ino-select', component: InoSelectShowcaseComponent },
+  { path: 'showcase/ino-snackbar', component: InoSnackbarShowcaseComponent },
 ];
 
 @NgModule({

@@ -34,6 +34,7 @@ import {InoTextareaShowcaseComponent} from './showcases/ino-textarea-showcase/in
 import {InoTooltipShowcaseComponent} from './showcases/ino-tooltip-showcase/ino-tooltip-showcase.component';
 import {InoTabBarShowcaseComponent} from './showcases/ino-tab-bar-showcase/ino-tab-bar-showcase.component';
 import {InoTabShowcaseComponent} from './showcases/ino-tab-showcase/ino-tab-showcase.component';
+import {InoHeaderShowcaseComponent} from './showcases/ino-header-showcase/ino-header-showcase.component';
 
 const routes: Routes = [
   { path: '', redirectTo: 'todo-list', pathMatch: 'full' },
@@ -71,6 +72,7 @@ const routes: Routes = [
   { path: 'showcase/ino-tooltip', component: InoTooltipShowcaseComponent },
   { path: 'showcase/ino-tab-bar', component: InoTabBarShowcaseComponent },
   { path: 'showcase/ino-tab', component: InoTabShowcaseComponent },
+  { path: 'showcase/ino-header', component: InoHeaderShowcaseComponent },
 ];
 
 @NgModule({

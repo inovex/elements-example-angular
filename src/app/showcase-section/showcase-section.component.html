@@ -1,5 +1,5 @@
-<h3>{{title}}</h3>
-<div class="divider"></div>
+<h3 *ngIf="title">{{title}}</h3>
+<div class="divider" *ngIf="title"></div>
 <div class="content">
   <ng-content></ng-content>
 </div>

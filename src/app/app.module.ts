@@ -39,6 +39,7 @@ import { InoSpinnerShowcaseComponent } from './showcases/ino-spinner-showcase/in
 import { InoSwitchShowcaseComponent } from './showcases/ino-switch-showcase/ino-switch-showcase.component';
 import { InoTableShowcaseComponent } from './showcases/ino-table-showcase/ino-table-showcase.component';
 import { InoTextareaShowcaseComponent } from './showcases/ino-textarea-showcase/ino-textarea-showcase.component';
+import { InoTooltipShowcaseComponent } from './showcases/ino-tooltip-showcase/ino-tooltip-showcase.component';
 
 @NgModule({
   declarations: [
@@ -76,6 +77,7 @@ import { InoTextareaShowcaseComponent } from './showcases/ino-textarea-showcase/
     InoSwitchShowcaseComponent,
     InoTableShowcaseComponent,
     InoTextareaShowcaseComponent,
+    InoTooltipShowcaseComponent,
   ],
   imports: [BrowserModule, SharedModule, InoElementsModule.forRoot(), AppRoutingModule],
   providers: [],

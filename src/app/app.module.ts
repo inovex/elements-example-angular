@@ -41,6 +41,7 @@ import { InoTableShowcaseComponent } from './showcases/ino-table-showcase/ino-ta
 import { InoTextareaShowcaseComponent } from './showcases/ino-textarea-showcase/ino-textarea-showcase.component';
 import { InoTooltipShowcaseComponent } from './showcases/ino-tooltip-showcase/ino-tooltip-showcase.component';
 import { InoTabBarShowcaseComponent } from './showcases/ino-tab-bar-showcase/ino-tab-bar-showcase.component';
+import { InoTabShowcaseComponent } from './showcases/ino-tab-showcase/ino-tab-showcase.component';
 
 @NgModule({
   declarations: [
@@ -80,6 +81,7 @@ import { InoTabBarShowcaseComponent } from './showcases/ino-tab-bar-showcase/ino
     InoTextareaShowcaseComponent,
     InoTooltipShowcaseComponent,
     InoTabBarShowcaseComponent,
+    InoTabShowcaseComponent,
   ],
   imports: [BrowserModule, SharedModule, InoElementsModule.forRoot(), AppRoutingModule],
   providers: [],

@@ -1,21 +1,9 @@
-<app-showcase-section title="Dismissable Nav Drawer">
+<app-showcase-section>
   <div class="nav-drawer-demo">
     <ino-nav-drawer variant="dismissible" anchor="left" [open]="drawerStates[0]" (openChange)="toggleDrawer(0)">
       <ng-container *ngTemplateOutlet="navContent"></ng-container>
       <main slot="app" class="main-content">
         <ino-button fill="outline" dense (click)="toggleDrawer(0)">Toggle Nav Drawer</ino-button>
-        <ng-container *ngTemplateOutlet="mainContent"></ng-container>
-      </main>
-    </ino-nav-drawer>
-  </div>
-</app-showcase-section>
-
-<app-showcase-section title="Modal Nav Drawer">
-  <div class="nav-drawer-demo">
-    <ino-nav-drawer variant="modal" anchor="left" [open]="drawerStates[1]" (openChange)="toggleDrawer(1)">
-      <ng-container *ngTemplateOutlet="navContent"></ng-container>
-      <main slot="app" class="main-content">
-        <ino-button fill="outline" dense (click)="toggleDrawer(1)"> Toggle Nav Drawer</ino-button>
         <ng-container *ngTemplateOutlet="mainContent"></ng-container>
       </main>
     </ino-nav-drawer>

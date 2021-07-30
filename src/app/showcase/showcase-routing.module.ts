@@ -35,6 +35,7 @@ import {InoTabShowcaseComponent} from './showcases/ino-tab-showcase/ino-tab-show
 import {InoHeaderShowcaseComponent} from './showcases/ino-header-showcase/ino-header-showcase.component';
 import {ShowcaseComponent} from './showcase.component';
 import {NgModule} from '@angular/core';
+import {InoSidebarShowcaseComponent} from './showcases/ino-sidebar-showcase/ino-sidebar-showcase.component';
 
 
 const routes: Routes = [
@@ -76,7 +77,7 @@ const routes: Routes = [
       { path: 'ino-tab-bar', component: InoTabBarShowcaseComponent },
       { path: 'ino-tab', component: InoTabShowcaseComponent },
       { path: 'ino-header', component: InoHeaderShowcaseComponent },
-      { path: 'ino-sidebar', component: InoHeaderShowcaseComponent },
+      { path: 'ino-sidebar', component: InoSidebarShowcaseComponent },
     ]
   }
 ];

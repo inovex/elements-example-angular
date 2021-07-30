@@ -1,15 +1,21 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, HostListener, ViewEncapsulation} from '@angular/core';
 
 @Component({
   selector: 'app-ino-sidebar-showcase',
   templateUrl: './ino-sidebar-showcase.component.html',
-  styleUrls: ['./ino-sidebar-showcase.component.scss']
+  styleUrls: ['./ino-sidebar-showcase.component.scss'],
+  encapsulation: ViewEncapsulation.None
 })
-export class InoSidebarShowcaseComponent implements OnInit {
+export class InoSidebarShowcaseComponent {
+  sidebarOpen = false;
 
-  constructor() { }
-
-  ngOnInit(): void {
+  @HostListener('openChange', ['$event'])
+  private onOpenChange(event: Event) {
+    event.preventDefault();
+    event.stopPropagation();
   }
 
+  toggleSidebar() {
+    this.sidebarOpen = !this.sidebarOpen;
+  }
 }

@@ -38,7 +38,6 @@ import {InoTabShowcaseComponent} from './showcases/ino-tab-showcase/ino-tab-show
 import {InoHeaderShowcaseComponent} from './showcases/ino-header-showcase/ino-header-showcase.component';
 import {InoSidebarShowcaseComponent} from './showcases/ino-sidebar-showcase/ino-sidebar-showcase.component';
 import {SharedModule} from '../shared/shared.module';
-import {RouterModule} from '@angular/router';
 import {InoElementsModule} from '@inovex.de/elements-angular';
 import {ShowcaseRoutingModule} from './showcase-routing.module';
 

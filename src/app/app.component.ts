@@ -10,20 +10,9 @@ import {NavigationItem} from './navigation/navigation.component'; // fix for cod
 export class AppComponent {
   navItems: NavigationItem[] = [
     {
-      text: 'elements Showcase',
-      url: 'showcase',
-      exactMatch: true,
-      icon: 'star',
-    },
-    {
       text: 'ToDo List',
       url: 'todo-list',
       icon: 'checkmark',
     },
-    {
-      text: 'InoButton',
-      url: 'showcase/ino-button',
-      icon: 'search'
-    }
   ];
 }

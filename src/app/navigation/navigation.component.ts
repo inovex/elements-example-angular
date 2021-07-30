@@ -5,7 +5,6 @@ export interface NavigationItem {
   text: string;
   url: string;
   exactMatch?: boolean;
-  icon: string;
 }
 
 @Component({

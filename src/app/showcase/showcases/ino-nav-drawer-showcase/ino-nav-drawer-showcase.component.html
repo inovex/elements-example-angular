@@ -1,4 +1,4 @@
-<app-showcase-section title="Dismissable">
+<app-showcase-section title="Dismissable Nav Drawer">
   <div class="nav-drawer-demo">
     <ino-nav-drawer variant="dismissible" anchor="left" [open]="drawerStates[0]" (openChange)="toggleDrawer(0)">
       <ng-container *ngTemplateOutlet="navContent"></ng-container>
@@ -10,7 +10,7 @@
   </div>
 </app-showcase-section>
 
-<app-showcase-section title="Modal">
+<app-showcase-section title="Modal Nav Drawer">
   <div class="nav-drawer-demo">
     <ino-nav-drawer variant="modal" anchor="left" [open]="drawerStates[1]" (openChange)="toggleDrawer(1)">
       <ng-container *ngTemplateOutlet="navContent"></ng-container>

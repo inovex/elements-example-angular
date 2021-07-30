@@ -1,0 +1,31 @@
+<app-showcase-section>
+  <ino-card disableElevation>
+    <div class="card-header" slot="header">
+      <p>Open Menu</p>
+      <ino-icon-button icon="menu">
+        <ino-menu placement="bottom">
+          <ino-list-item tabindex="0" text="Item 1"></ino-list-item>
+          <ino-list-item tabindex="0" text="Item 2"></ino-list-item>
+        </ino-menu>
+      </ino-icon-button>
+    </div>
+    <div slot="content" class="card-content">
+      <ng-container *ngTemplateOutlet="exampleImg"></ng-container>
+    </div>
+    <div slot="footer" class="card-footer">
+      <ino-icon-button icon="star"></ino-icon-button>
+    </div>
+  </ino-card>
+
+</app-showcase-section>
+
+<ng-template #exampleImg>
+  <ino-img
+    slot="leading"
+    src="https://cdn-images-1.medium.com/max/1600/1*HP8l7LMMt7Sh5UoO1T-yLQ.png"
+    ratioWidth="1"
+    ratioHeight="1"
+    width="140"
+    height="140"
+  ></ino-img>
+</ng-template>

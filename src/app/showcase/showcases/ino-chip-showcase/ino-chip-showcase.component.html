@@ -1,0 +1,48 @@
+<app-showcase-section title="Color Variants">
+  <ino-chip-set>
+    <ino-chip label="Default"></ino-chip>
+    <ino-chip colorScheme="primary" label="Primary"></ino-chip>
+    <ino-chip colorScheme="secondary" label="Secondary"></ino-chip>
+    <ino-chip colorScheme="success" label="Success"></ino-chip>
+    <ino-chip colorScheme="warning" label="Warning"></ino-chip>
+    <ino-chip colorScheme="error" label="Error"></ino-chip>
+    <ino-chip colorScheme="light" label="Light"></ino-chip>
+    <ino-chip colorScheme="dark" label="Dark"></ino-chip>
+    <ino-chip fill="outline" label="Outline"></ino-chip>
+    <ino-chip fill="outline" label="Primary" colorScheme="primary"></ino-chip>
+    <ino-chip
+      fill="outline"
+      label="Secondary"
+      colorScheme="secondary"
+    ></ino-chip>
+    <ino-chip fill="outline" colorScheme="success" label="Success"></ino-chip>
+    <ino-chip fill="outline" colorScheme="warning" label="Warning"></ino-chip>
+    <ino-chip fill="outline" colorScheme="error" label="Error"></ino-chip>
+    <ino-chip fill="outline" colorScheme="light" label="Light"></ino-chip>
+    <ino-chip fill="outline" colorScheme="dark" label="Dark"></ino-chip>
+  </ino-chip-set>
+</app-showcase-section>
+
+<app-showcase-section title="Chips with Icons">
+  <ino-chip-set>
+    <ino-chip colorScheme="primary" label="Leading">
+      <ino-icon slot="icon-leading" icon="checkmark"></ino-icon>
+    </ino-chip>
+    <ino-chip colorScheme="primary" label="Trailing">
+      <ino-icon slot="icon-trailing" icon="checkmark"></ino-icon>
+    </ino-chip>
+    <ino-chip colorScheme="primary" label="Leading & Trailing">
+      <ino-icon slot="icon-leading" icon="checkmark"></ino-icon>
+      <ino-icon slot="icon-trailing" icon="checkmark"></ino-icon>
+    </ino-chip>
+  </ino-chip-set>
+</app-showcase-section>
+
+
+<app-showcase-section title="Removable and Selectable Chips">
+  <ino-chip-set>
+    <ino-chip colorScheme="primary" removable label="Removable" ></ino-chip>
+    <ino-chip colorScheme="primary" selected label="Selected"></ino-chip>
+    <ino-chip colorScheme="primary" selected label="Selected with Checkmark" selectable></ino-chip>
+  </ino-chip-set>
+</app-showcase-section>

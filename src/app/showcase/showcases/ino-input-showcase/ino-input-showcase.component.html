@@ -1,0 +1,75 @@
+<app-showcase-section title="Input Types">
+  <ino-input placeholder="type = text"></ino-input>
+  <ino-input placeholder="type = email" type="email"></ino-input>
+  <ino-input type="number" placeholder="type = number"></ino-input>
+  <ino-input type="number" placeholder="type = number with steps=5" step="5"></ino-input>
+  <ino-input type="number" placeholder="type = number with step='any' (decimal numbers)" step="any"></ino-input>
+  <ino-input type="password" placeholder="type = password"></ino-input>
+</app-showcase-section>
+
+<app-showcase-section title="Input States">
+  <ino-input placeholder="Disabled" disabled></ino-input>
+  <ino-input label="Optional" showLabelHint></ino-input>
+  <ino-input label="Required" required showLabelHint></ino-input>
+
+  <ino-input placeholder="Outline disabled" outline disabled></ino-input>
+  <ino-input label="Outline optional" outline showLabelHint></ino-input>
+  <ino-input label="Outline required" outline showLabelHint required></ino-input>
+</app-showcase-section>
+
+<app-showcase-section title="Input Labels">
+  <ino-input label="Floating label"></ino-input>
+  <ino-input label="Floating label" value="With value"></ino-input>
+
+  <ino-input label="Outlined floating label" outline></ino-input>
+  <ino-input label="Outlined floating label" value="With value" outline></ino-input>
+</app-showcase-section>
+
+<app-showcase-section title="Input with Helpertexts">
+  <ino-input placeholder="Helper text on focus (default)" helper="Helper text"></ino-input>
+  <ino-input placeholder="Persistent helper text" helper="Persistent helper text" helperPersistent></ino-input>
+  <ino-input required placeholder="Validation message for required input" helper="This field is required" helperValidation></ino-input>
+  <ino-input value="Length of 12" helperCharacterCounter maxlength=25></ino-input>
+</app-showcase-section>
+
+<app-showcase-section title="Outlined Input">
+  <ino-input placeholder="Outlined" outline></ino-input>
+</app-showcase-section>
+
+<app-showcase-section title="Input with Icons">
+  <ino-input label="Leading icon">
+    <ino-icon slot="icon-leading" icon="search"></ino-icon>
+  </ino-input>
+  <ino-input label="Trailing icon">
+    <ino-icon slot="icon-trailing" icon="search"></ino-icon>
+  </ino-input>
+  <ino-input label="Leading and Trailing icon">
+    <ino-icon slot="icon-leading" icon="search"></ino-icon>
+    <ino-icon slot="icon-trailing" icon="add"></ino-icon>
+  </ino-input>
+  <ino-input label="Clickable Icon">
+    <ino-icon clickable slot="icon-trailing" icon="search"></ino-icon>
+  </ino-input>
+</app-showcase-section>
+
+<app-showcase-section title="Datalist">
+  <ino-input label="Datalist" data-list="languages">
+    <datalist id="languages">
+      <option>HTML</option>
+      <option>Java</option>
+      <option>Perl</option>
+      <option>PHP</option>
+      <option>Ruby on Rails</option>
+    </datalist>
+  </ino-input>
+</app-showcase-section>
+
+<app-showcase-section title="Input with Number Formats">
+  <ino-input decimalPlaces="2" placeholder="With 2 decimal places"></ino-input>
+  <ino-input thousandsSeparator placeholder="With thousands separator"></ino-input>
+</app-showcase-section>
+
+<app-showcase-section title="Input with Metadata">
+  <ino-input value="2,00" decimalPlaces="2" thousandsSeparator unit="€" label="Euro Input"></ino-input>
+  <ino-input value="2" type="number" unit="h" label="Hours input"></ino-input>
+</app-showcase-section>

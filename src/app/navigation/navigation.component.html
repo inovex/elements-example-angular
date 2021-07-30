@@ -1,0 +1,23 @@
+<ino-nav-drawer open="{{navBarExpanded}}" (openChange)="toggleNavBar()">
+  <ino-list slot="header">
+    <ino-icon
+      class="header-icon"
+      icon="employee"
+      (clickEl)="onNavIconClick()"
+      clickable
+    ></ino-icon>
+  </ino-list>
+  <ino-list slot="content">
+    <ino-nav-item
+      *ngFor="let navItem of navItems"
+      text="{{navItem.text}}"
+      [routerLink]="navItem.url"
+      [routerLinkActive]
+      #rla="routerLinkActive"
+      [activated]="rla.isActive"
+    >
+      <ino-icon icon="pin"></ino-icon>
+    </ino-nav-item>
+  </ino-list>
+  <ng-content></ng-content>
+</ino-nav-drawer>

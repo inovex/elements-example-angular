@@ -1,45 +1,5 @@
-h2 {
-  text-align: center;
-}
+@use "../styles/colors";
 
-.app-wrapper {
-  background: white;
-  width: 60%;
-  border: 1px solid #CCC;
-  margin: 24px auto;
-  padding: 0;
-}
-
-.action-box {
-  background-color: #fcfcfc;
-  font-size: 14px;
-
-  padding: 12px;
-  display: flex;
-}
-
-.action-box ino-input {
-  flex-grow: 1;
-}
-
-.todos {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-
-.todos li {
-  display: flex;
-  justify-content: space-between;
-  align-items: baseline;
-  padding: 12px;
-  border-bottom: 1px solid #CCC;
-}
-
-.todos li:nth-child(odd) {
-  background: #EEEEEE;
-}
-
-.todos li:last-child {
-  border-bottom: none;
+.showcase {
+  padding: 40px;
 }

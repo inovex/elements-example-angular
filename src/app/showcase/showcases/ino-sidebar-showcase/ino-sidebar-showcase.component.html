@@ -1,0 +1,20 @@
+<app-showcase-section>
+  <div class="nav-drawer-demo">
+    <ino-button (click)="toggleSidebar()">Toggle Sidebar</ino-button>
+    <ino-sidebar [open]="sidebarOpen">
+      <div class="sidebar-header" slot="header">
+        <ino-icon-button icon="close" (clickEl)="toggleSidebar()"></ino-icon-button>
+      </div>
+      <div class="sidebar-content" slot="content">
+        <ino-list>
+          <ino-list-item text="List item"></ino-list-item>
+          <ino-list-item text="List item"></ino-list-item>
+          <ino-list-item text="List item"></ino-list-item>
+          <ino-list-item text="List item"></ino-list-item>
+          <ino-list-item text="List item"></ino-list-item>
+          <ino-list-item text="List item"></ino-list-item>
+        </ino-list>
+      </div>
+    </ino-sidebar>
+  </div>
+</app-showcase-section>

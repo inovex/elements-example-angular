@@ -1,0 +1,30 @@
+
+ino-button {
+  margin: 15px;
+}
+
+.button-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin-bottom: 10px;
+  width: 100%;
+  flex-wrap: wrap;
+}
+
+.sample-form {
+  width: 80%;
+  display: flex;
+
+  .reset-input {
+    flex: 1;
+    margin: 0 12px 12px 0;
+  }
+}
+
+.white-button {
+  background-color: blue;
+  height: 40px;
+  width: min-content;
+  padding: 5px;
+}

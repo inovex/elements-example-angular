@@ -1,1 +1,21 @@
-/* You can add global styles to this file, and also import other style files */
+@use "styles/colors";
+@use "styles/fonts";
+
+html {
+  height: 100%;
+}
+
+body {
+  height: 100%;
+  margin: 0;
+}
+
+h1, h2, h3, h4 {
+  color: colors.$dark;
+  font: fonts.$font-family-sans-serif;
+}
+
+h3 {
+  margin: 10px 0 0 0;
+  font-weight: normal;
+}

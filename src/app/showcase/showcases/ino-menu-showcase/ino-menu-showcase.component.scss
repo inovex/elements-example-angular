@@ -1,0 +1,26 @@
+
+
+ino-card {
+  width: 200px;
+  height: 300px;
+
+  .card-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .card-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .card-footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+  }
+}

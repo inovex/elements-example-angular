@@ -1,45 +1,29 @@
 <app-showcase-section title="Snackbar Variants">
-  <ino-button class="snackbar-trigger" data-template-id="snackbar-with-action">Show Snackbar (With Action)</ino-button>
-  <ng-template id="snackbar-with-action">
-    <ino-snackbar [message]="sampleText" actionText="Anlegen"></ino-snackbar>
-  </ng-template>
+  <ino-button class="snackbar-trigger" (click)="displaySnackbar(0)">Show Snackbar (With Action)</ino-button>
+  <ino-snackbar id="snackbar-with-action" [message]="sampleText" actionText="Anlegen" *ngIf="snackbarStates[0]" (hideEl)="hideSnackbar(0)"></ino-snackbar>
 
-  <ino-button class="snackbar-trigger" data-template-id="snackbar-no-action">Show Snackbar (No Action)</ino-button>
-  <template id="snackbar-no-action">
-    <ino-snackbar [message]="sampleText"></ino-snackbar>
-  </template>
+  <ino-button class="snackbar-trigger" (click)="displaySnackbar(1)">Show Snackbar (No Action)</ino-button>
+  <ino-snackbar id="snackbar-no-action" [message]="sampleText" *ngIf="snackbarStates[1]" (hideEl)="hideSnackbar(1)"></ino-snackbar>
 
-  <ino-button class="snackbar-trigger" data-template-id="snackbar-no-timeout">Show Snackbar (Without timeout)</ino-button>
-  <template id="snackbar-no-timeout">
-    <ino-snackbar [message]="sampleText" timeout="-1"></ino-snackbar>
-  </template>
+  <ino-button class="snackbar-trigger" (click)="displaySnackbar(2)">Show Snackbar (Without timeout)</ino-button>
+  <ino-snackbar id="snackbar-no-timeout" [message]="sampleText" timeout="-1" *ngIf="snackbarStates[2]" (hideEl)="hideSnackbar(2)"></ino-snackbar>
 </app-showcase-section>
 
 <app-showcase-section title="Snackbar Types">
-  <ino-button class="snackbar-trigger" data-template-id="snackbar-warning">Show Snackbar (warning)</ino-button>
-  <template id="snackbar-warning">
-    <ino-snackbar [message]="sampleText" type="warning"></ino-snackbar>
-  </template>
+  <ino-button class="snackbar-trigger" data-template-id="snackbar-warning" (click)="displaySnackbar(3)">Show Snackbar (warning)</ino-button>
+  <ino-snackbar [message]="sampleText" type="warning" *ngIf="snackbarStates[3]" (hideEl)="hideSnackbar(3)"></ino-snackbar>
 
-  <ino-button class="snackbar-trigger" data-template-id="snackbar-error">Show Snackbar (error)</ino-button>
-  <template id="snackbar-error">
-    <ino-snackbar [message]="sampleText" type="error"></ino-snackbar>
-  </template>
+  <ino-button class="snackbar-trigger" data-template-id="snackbar-error" (click)="displaySnackbar(4)">Show Snackbar (error)</ino-button>
+  <ino-snackbar [message]="sampleText" type="error" *ngIf="snackbarStates[4]" (hideEl)="hideSnackbar(4)"></ino-snackbar>
 </app-showcase-section>
 
 <app-showcase-section title="Alignment Options">
-  <ino-button class="snackbar-trigger" data-template-id="snackbar-left-align">Left</ino-button>
-  <template id="snackbar-left-align">
-    <ino-snackbar [message]="sampleText" actionText="Anlegen" alignment="left"></ino-snackbar>
-  </template>
+  <ino-button class="snackbar-trigger" data-template-id="snackbar-left-align" (click)="displaySnackbar(5)">Left</ino-button>
+  <ino-snackbar [message]="sampleText" actionText="Anlegen" alignment="left" *ngIf="snackbarStates[5]" (hideEl)="hideSnackbar(5)"></ino-snackbar>
 
-  <ino-button class="snackbar-trigger" data-template-id="snackbar-center-align">Center</ino-button>
-  <template id="snackbar-center-align">
-    <ino-snackbar [message]="sampleText" actionText="Anlegen"></ino-snackbar>
-  </template>
+  <ino-button class="snackbar-trigger" data-template-id="snackbar-center-align" (click)="displaySnackbar(6)">Center</ino-button>
+  <ino-snackbar [message]="sampleText" actionText="Anlegen" *ngIf="snackbarStates[6]" (hideEl)="hideSnackbar(6)"></ino-snackbar>
 
-  <ino-button class="snackbar-trigger" data-template-id="snackbar-right-align">Right</ino-button>
-  <template id="snackbar-right-align">
-    <ino-snackbar [message]="sampleText" actionText="Anlegen" alignment="right"></ino-snackbar>
-  </template>
+  <ino-button class="snackbar-trigger" data-template-id="snackbar-right-align" (click)="displaySnackbar(7)">Right</ino-button>
+  <ino-snackbar [message]="sampleText" actionText="Anlegen" alignment="right" *ngIf="snackbarStates[7]" (hideEl)="hideSnackbar(7)"></ino-snackbar>
 </app-showcase-section>

@@ -1,3 +1,5 @@
+❗ This project is deprecated has been moved to the [main repository of the inovex-elements](https://github.com/inovex/elements/tree/master/packages/elements-angular-example)
+
 # ExampleAngular
 
 [![Edit inovex-elements](https://codesandbox.io/static/img/play-codesandbox.svg)](https://codesandbox.io/s/github/inovex/elements-example-angular/tree/master/?fontsize=14&hidenavigation=1&theme=dark)
